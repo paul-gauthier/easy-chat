@@ -1,8 +1,11 @@
 ###
 
-Change the sample text in the <p> to have a <span> around each individual word.
-Update speakAndHighlight() so that it can still speak and highlight text like this.
+Change the function name and calling style to be like:
 
+
+  const speak = (element) => { ... }
+
+                
 
 
 
