@@ -22,18 +22,18 @@
 			border-radius: 10px;
 			margin-bottom: 30px;
 		}
-		.chat-box p, .chat-box .user1, .chat-box .user2 {
+		.chat-box p, .chat-box .machine-user, .chat-box .human-user {
 			margin: 20px 0;
 			padding: 10px;
 			border-radius: 10px;
 			font-size: 24px;
 			line-height: 1.5;
 		}
-		.chat-box .user1 {
+		.chat-box .machine-user {
 			background-color: #e6e6e6;
 			text-align: left;
 		}
-		.chat-box .user2 {
+		.chat-box .human-user {
 			background-color: #d9edf7;
 			text-align: right;
 		}
@@ -71,14 +71,14 @@
 <body>
 	<div class="container">
 		<div class="chat-box">
-			<p class="user1">Hi, how are you?</p>
-			<p class="user2">I'm good, thanks. How about you?</p>
-			<p class="user1">I'm doing well, thanks for asking.</p>
-			<p class="user2">That's great to hear.</p>
-			<p class="user2">What have you been up to lately?</p>
-			<p class="user1">Not much, just working and hanging out with friends. How about you?</p>
-			<p class="user2">Same here, just trying to stay busy.</p>
-			<p class="user2">Anyway, I have to go now. Talk to you later!</p>
+			<p class="machine-user">Hi, how are you?</p>
+			<p class="human-user">I'm good, thanks. How about you?</p>
+			<p class="machine-user">I'm doing well, thanks for asking.</p>
+			<p class="human-user">That's great to hear.</p>
+			<p class="human-user">What have you been up to lately?</p>
+			<p class="machine-user">Not much, just working and hanging out with friends. How about you?</p>
+			<p class="human-user">Same here, just trying to stay busy.</p>
+			<p class="human-user">Anyway, I have to go now. Talk to you later!</p>
 		</div>
 		<div class="input-box">
 			<input type="text" placeholder="Type your message here...">
@@ -94,7 +94,7 @@
 			if (inputBox.value !== '') {
 				const message = document.createElement('p');
 				message.textContent = inputBox.value;
-				message.classList.add('user2');
+				message.classList.add('human-user');
 				chatBox.appendChild(message);
 				inputBox.value = '';
 				chatBox.scrollTop = chatBox.scrollHeight;
@@ -105,7 +105,7 @@
 			if (event.key === 'Enter' && inputBox.value !== '') {
 				const message = document.createElement('p');
 				message.textContent = inputBox.value;
-				message.classList.add('user2');
+				message.classList.add('human-user');
 				chatBox.appendChild(message);
 				inputBox.value = '';
 				chatBox.scrollTop = chatBox.scrollHeight;
