@@ -1,7 +1,3 @@
 ###
 
-Put SPANs around every individual word in all the messages by default.
-This way they can be clicked on and styled independently.
-When the user clicks on any word in the chat history, highlight *just* the word that they clicked on.
-Do not highlight the whole message.
-Only require a SINGLE CLICK not a double click.
+Use text-to-voice to speak the highlighted word.

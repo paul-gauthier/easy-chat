@@ -206,8 +206,17 @@
                         const highlightedWords = chatBox.querySelectorAll('.highlight');
                         highlightedWords.forEach(word => word.classList.remove('highlight'));
                         event.target.classList.add('highlight');
+                        const textToSpeak = event.target.textContent;
+                        const speech = new SpeechSynthesisUtterance(textToSpeak);
+                        speechSynthesis.speak(speech);
                     }
                 });
+                
+                /* New code for text-to-speech */
+                const speak = (text) => {
+                    const speech = new SpeechSynthesisUtterance(text);
+                    speechSynthesis.speak(speech);
+                };
 	</script>
 </body>
 </html>
