@@ -129,7 +129,6 @@
 		<div class="chat-box">
 			<p class="user"><span>Hello!</span></p>
 			<p class="assistant"><span>How</span> <span>can</span> <span>I</span> <span>help</span> <span>you?</span></p>
-</p>
 			<div id="bottom"></div>
 		</div>
 		<div class="input-box">
@@ -152,7 +151,7 @@
 				const message = document.createElement('p');
 				message.innerHTML = inputBox.value.split(' ').map(word => `<span>${word}</span>`).join(' ');
 				message.classList.add('user');
-				chatBox.appendChild(message);
+				chatBox.insertBefore(message, document.getElementById('bottom'));
 				inputBox.value = '';
 				document.getElementById('bottom').scrollIntoView();
 				
@@ -182,7 +181,7 @@
 						const machineUserMessage = document.createElement('p');
 						machineUserMessage.innerHTML = data.choices[0].message.content.split(' ').map(word => `<span>${word}</span>`).join(' ');
 						machineUserMessage.classList.add('machine-user');
-						chatBox.appendChild(machineUserMessage);
+						chatBox.insertBefore(machineUserMessage, document.getElementById('bottom'));
 						document.getElementById('bottom').scrollIntoView();
                                                 spinner.style.display = 'none';
                                                 sendButton.style.display = 'inline-block';
