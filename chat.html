@@ -207,7 +207,7 @@
                 
                 /* New code for word highlighting */
                 chatBox.addEventListener('click', (event) => {
-                    if (event.target.tagName === 'SPAN') {
+                    if (event.target.tagName === 'SPAN' && !event.target.classList.contains('speaker')) {
                         const highlightedWords = chatBox.querySelectorAll('.highlight');
                         highlightedWords.forEach(word => word.classList.remove('highlight'));
                         event.target.classList.add('highlight');

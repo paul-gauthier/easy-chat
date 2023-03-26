@@ -1,6 +1,7 @@
 ###
 
-Add a small speaker button beside each chat message.
-Including the initial few messages that are already on the page.
-Use a unicode speaker symbol for the icon.
+The text-to-speech is saying "speaker outputting high volume" at the end of every message.
+I think it is reading the unicode speaker icon aloud.
+It should not.
+Fix this bug.
 
