@@ -73,6 +73,9 @@
 			cursor: pointer;
 			margin-left: 10px;
 		}
+                .input-box + div {
+                        height: 20px;
+                }
 	</style>
         <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet"> 
 </head>
@@ -93,6 +96,7 @@
 			<textarea placeholder="Type your message here..."></textarea>
 			<button>Send</button>
 		</div>
+                <div></div>
 	</div>
 	<script>
 		const chatBox = document.querySelector('.chat-box');
