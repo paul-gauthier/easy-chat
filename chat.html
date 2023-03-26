@@ -137,6 +137,7 @@
 		const sendMessage = () => {
 			if (inputBox.value !== '') {
                                 spinner.style.display = 'inline-block';
+                                sendButton.style.display = 'none';
 				const message = document.createElement('p');
 				message.textContent = inputBox.value;
 				message.classList.add('user');
@@ -173,6 +174,7 @@
 						chatBox.appendChild(machineUserMessage);
 						document.getElementById('bottom').scrollIntoView();
                                                 spinner.style.display = 'none';
+                                                sendButton.style.display = 'inline-block';
 					})
 					.catch(error => console.log(error));
 			}
