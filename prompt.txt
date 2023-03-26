@@ -1,9 +1,5 @@
 ###
 
-Change the function name and calling style to be like:
-
-
-  const speak = (element) => { ... }
 
                 
 

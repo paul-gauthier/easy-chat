@@ -241,8 +241,11 @@
 			});
 
 			speechSynthesis.speak(utterance);
+			utterance.onend = function() {
+				element.innerHTML = text;
+			};
 		}
-                
+         
                 /* New code for adding speaker icon to user message */
                 const addUserSpeakerIcon = (message) => {
                     const speakerIcon = document.createElement('span');
