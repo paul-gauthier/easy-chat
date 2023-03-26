@@ -82,6 +82,7 @@
 			<p class="machine-user">Not much, just working and hanging out with friends. How about you?</p>
 			<p class="human-user">Same here, just trying to stay busy.</p>
 			<p class="human-user">Anyway, I have to go now. Talk to you later!</p>
+			<div id="bottom"></div>
 		</div>
 		<div class="input-box">
 			<textarea placeholder="Type your message here..."></textarea>
@@ -100,7 +101,7 @@
 				message.classList.add('human-user');
 				chatBox.appendChild(message);
 				inputBox.value = '';
-				chatBox.scrollTop = chatBox.scrollHeight;
+				document.getElementById('bottom').scrollIntoView();
 			}
 		});
 
@@ -111,7 +112,7 @@
 				message.classList.add('human-user');
 				chatBox.appendChild(message);
 				inputBox.value = '';
-				chatBox.scrollTop = chatBox.scrollHeight;
+				document.getElementById('bottom').scrollIntoView();
 			}
 		});
 	</script>
