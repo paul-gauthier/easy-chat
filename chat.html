@@ -161,6 +161,7 @@
 				message.innerHTML = inputBox.value.split(' ').map(word => `<span>${word}</span>`).join(' ');
 				message.classList.add('user');
 				chatBox.insertBefore(message, document.getElementById('bottom'));
+                                addUserSpeakerIcon(message);
 				inputBox.value = '';
 				document.getElementById('bottom').scrollIntoView();
 				
@@ -237,12 +238,8 @@
                     speakerIcon.onclick = () => speak(message.textContent);
                     message.appendChild(speakerIcon);
                 };
-                
-                chatBox.addEventListener('DOMNodeInserted', (event) => {
-                    if (event.target.classList.contains('user')) {
-                        addUserSpeakerIcon(event.target);
-                    }
-                });
-	</script>
+	
+</script>
 </body>
 </html>
+            

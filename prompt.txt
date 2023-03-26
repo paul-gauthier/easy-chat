@@ -1,7 +1,6 @@
 ###
 
-When the user adds a new message, add a speaker icon which will read the user's message aloud.
-
+Call addUserSpeakerIcon() from inside sendMessage, right after the user message is inserted. Don't use chatBox.addEventListener to trigger it.
 
 
 
