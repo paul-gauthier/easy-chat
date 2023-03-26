@@ -1,6 +1,9 @@
 ###
 
-Call addUserSpeakerIcon() from inside sendMessage, right after the user message is inserted. Don't use chatBox.addEventListener to trigger it.
+write me js which will read aloud all the text in a <p>, highlighting each word as it is spoken. use boundary events from SpeechSynthesisUtterance to synchronize the highlighting with the speech.
+
+make it into a html doc with inline js and put some sample text in a <p> that will be read when clicked
+
 
 
 
