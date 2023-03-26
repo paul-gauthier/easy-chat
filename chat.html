@@ -125,7 +125,7 @@
 			<div id="bottom"></div>
 		</div>
 		<div class="input-box">
-			<textarea placeholder="Type your message here..."></textarea>
+			<textarea placeholder="Type your message here..." autofocus></textarea>
 			<button>Send</button>
                         <div class="spinner"></div>
 		</div>
@@ -178,6 +178,7 @@
 						document.getElementById('bottom').scrollIntoView();
                                                 spinner.style.display = 'none';
                                                 sendButton.style.display = 'inline-block';
+                                                inputBox.focus();
 					})
 					.catch(error => console.log(error));
 			}
