@@ -1,8 +1,6 @@
 ###
 
-When new messages are added it is not scrolling to the bottom to show the newest message.
-They are being added AFTER the bottom div.
-New messages need to be added BEFORE the bottom div.
-
-Fix this bug.
+Add a small speaker button beside each chat message.
+Including the initial few messages that are already on the page.
+Use a unicode speaker symbol for the icon.
 

@@ -54,6 +54,12 @@
                 .chat-box span {
                     cursor: pointer;
                 }
+                .chat-box .speaker {
+                    display: inline-block;
+                    margin-left: 10px;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
 		.input-box {
 			display: flex;
 			align-items: center;
@@ -127,8 +133,8 @@
 <body>
 	<div class="container">
 		<div class="chat-box">
-			<p class="user"><span>Hello!</span></p>
-			<p class="assistant"><span>How</span> <span>can</span> <span>I</span> <span>help</span> <span>you?</span></p>
+			<p class="user"><span>Hello!</span><span class="speaker" onclick="speak('Hello!')">&#128266;</span></p>
+			<p class="assistant"><span>How</span> <span>can</span> <span>I</span> <span>help</span> <span>you?</span><span class="speaker" onclick="speak('How can I help you?')">&#128266;</span></p>
 			<div id="bottom"></div>
 		</div>
 		<div class="input-box">
