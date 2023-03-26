@@ -1,0 +1,5 @@
+###
+
+Add an animation to reveal each new message as it is added to the conversation.
+
+
