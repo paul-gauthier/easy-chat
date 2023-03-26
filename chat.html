@@ -54,7 +54,7 @@
                 .chat-box span {
                     cursor: pointer;
                 }
-                .chat-box .speaker {
+                .chat-box .fa {
                     display: inline-block;
                     margin-left: 10px;
                     font-size: 20px;
@@ -128,13 +128,13 @@
                     background-color: yellow;
                 }
 	</style>
-        <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 	<div class="container">
 		<div class="chat-box">
-			<p class="user"><span>Hello!</span><span class="speaker" onclick="speak('Hello!')">&#128266;</span></p>
-			<p class="assistant"><span>How</span> <span>can</span> <span>I</span> <span>help</span> <span>you?</span><span class="speaker" onclick="speak('How can I help you?')">&#128266;</span></p>
+			<p class="user"><span>Hello!</span><span class="fa fa-volume-up" onclick="speak(this.parentNode.textContent)"></span></p>
+			<p class="assistant"><span>How</span> <span>can</span> <span>I</span> <span>help</span> <span>you?</span><span class="fa fa-volume-up" onclick="speak(this.parentNode.textContent)"></span></p>
 			<div id="bottom"></div>
 		</div>
 		<div class="input-box">
@@ -207,7 +207,7 @@
                 
                 /* New code for word highlighting */
                 chatBox.addEventListener('click', (event) => {
-                    if (event.target.tagName === 'SPAN' && !event.target.classList.contains('speaker')) {
+                    if (event.target.tagName === 'SPAN' && !event.target.classList.contains('fa')) {
                         const highlightedWords = chatBox.querySelectorAll('.highlight');
                         highlightedWords.forEach(word => word.classList.remove('highlight'));
                         event.target.classList.add('highlight');

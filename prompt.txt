@@ -1,7 +1,12 @@
 ###
 
-The text-to-speech is saying "speaker outputting high volume" at the end of every message.
-I think it is reading the unicode speaker icon aloud.
-It should not.
-Fix this bug.
+Change all the speaker icons to use font-awesome.
+
+
+
+
+
+
+
+
 
