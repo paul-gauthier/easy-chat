@@ -136,8 +136,8 @@
 <body>
 	<div class="container">
 		<div class="chat-box">
-			<p class="user"><span>Hello!</span><span class="fa fa-volume-up" onclick="speak(this.parentNode.textContent)"></span></p>
-			<p class="assistant"><span>How</span> <span>can</span> <span>I</span> <span>help</span> <span>you?</span><span class="fa fa-volume-up" onclick="speak(this.parentNode.textContent)"></span></p>
+			<p class="user"><span>Hello!</span><span class="fa fa-volume-up" onclick="speak(this.parentNode)"></span></p>
+			<p class="assistant"><span>How</span> <span>can</span> <span>I</span> <span>help</span> <span>you?</span><span class="fa fa-volume-up" onclick="speak(this.parentNode)"></span></p>
 			<div id="bottom"></div>
 		</div>
 		<div class="input-box">
@@ -198,7 +198,7 @@
                                                 inputBox.focus();
                                                 const speakButton = document.createElement('span');
                                                 speakButton.classList.add('fa', 'fa-volume-up');
-                                                speakButton.onclick = () => speak(machineUserMessage.textContent);
+                                                speakButton.onclick = () => speak(machineUserMessage);
                                                 machineUserMessage.appendChild(speakButton);
 					})
 					.catch(error => console.log(error));
@@ -225,17 +225,29 @@
                     }
                 });
                 
-                /* New code for text-to-speech */
-                const speak = (text) => {
-                    const speech = new SpeechSynthesisUtterance(text);
-                    speechSynthesis.speak(speech);
-                };
+		const speak = (element) => {
+			var text = element.innerText;
+			var words = text.split(' ');
+			var utterance = new SpeechSynthesisUtterance(text);
+			var currentIndex = 0;
+
+			utterance.addEventListener('boundary', function(event) {
+				if (event.name === 'word') {
+					var word = words[currentIndex];
+					element.innerHTML = text;
+					element.innerHTML = element.innerHTML.replace(word, '<span class="highlight">' + word + '</span>');
+					currentIndex++;
+				}
+			});
+
+			speechSynthesis.speak(utterance);
+		}
                 
                 /* New code for adding speaker icon to user message */
                 const addUserSpeakerIcon = (message) => {
                     const speakerIcon = document.createElement('span');
                     speakerIcon.classList.add('fa', 'fa-volume-up');
-                    speakerIcon.onclick = () => speak(message.textContent);
+                    speakerIcon.onclick = () => speak(message);
                     message.appendChild(speakerIcon);
                 };
 	
