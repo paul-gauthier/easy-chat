@@ -229,6 +229,20 @@
                     const speech = new SpeechSynthesisUtterance(text);
                     speechSynthesis.speak(speech);
                 };
+                
+                /* New code for adding speaker icon to user message */
+                const addUserSpeakerIcon = (message) => {
+                    const speakerIcon = document.createElement('span');
+                    speakerIcon.classList.add('fa', 'fa-volume-up');
+                    speakerIcon.onclick = () => speak(message.textContent);
+                    message.appendChild(speakerIcon);
+                };
+                
+                chatBox.addEventListener('DOMNodeInserted', (event) => {
+                    if (event.target.classList.contains('user')) {
+                        addUserSpeakerIcon(event.target);
+                    }
+                });
 	</script>
 </body>
 </html>

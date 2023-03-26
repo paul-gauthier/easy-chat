@@ -1,8 +1,6 @@
 ###
 
-Add speaker icons with calls to speak() for new messages from user and assistant.
-
-
+When the user adds a new message, add a speaker icon which will read the user's message aloud.
 
 
 
