@@ -88,6 +88,23 @@
                         font-size: 14px;
                     }
                 }
+                
+                /* New code for progress spinner */
+                .spinner {
+                    border: 16px solid #f3f3f3;
+                    border-top: 16px solid #4CAF50;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    animation: spin 2s linear infinite;
+                    margin-left: 10px;
+                    display: none;
+                }
+
+                @keyframes spin {
+                    0% { transform: rotate(0deg); }
+                    100% { transform: rotate(360deg); }
+                }
 	</style>
         <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet"> 
 </head>
@@ -107,6 +124,7 @@
 		<div class="input-box">
 			<textarea placeholder="Type your message here..."></textarea>
 			<button>Send</button>
+                        <div class="spinner"></div>
 		</div>
                 <div></div>
 	</div>
@@ -114,9 +132,11 @@
 		const chatBox = document.querySelector('.chat-box');
 		const inputBox = document.querySelector('.input-box textarea');
 		const sendButton = document.querySelector('.input-box button');
+                const spinner = document.querySelector('.spinner');
 
 		const sendMessage = () => {
 			if (inputBox.value !== '') {
+                                spinner.style.display = 'inline-block';
 				const message = document.createElement('p');
 				message.textContent = inputBox.value;
 				message.classList.add('user');
@@ -152,6 +172,7 @@
 						machineUserMessage.classList.add('machine-user');
 						chatBox.appendChild(machineUserMessage);
 						document.getElementById('bottom').scrollIntoView();
+                                                spinner.style.display = 'none';
 					})
 					.catch(error => console.log(error));
 			}
