@@ -111,7 +111,7 @@
 		const inputBox = document.querySelector('.input-box textarea');
 		const sendButton = document.querySelector('.input-box button');
 
-		sendButton.addEventListener('click', () => {
+		const sendMessage = () => {
 			if (inputBox.value !== '') {
 				const message = document.createElement('p');
 				message.textContent = inputBox.value;
@@ -120,16 +120,13 @@
 				inputBox.value = '';
 				document.getElementById('bottom').scrollIntoView();
 			}
-		});
+		};
+
+		sendButton.addEventListener('click', sendMessage);
 
 		inputBox.addEventListener('keydown', (event) => {
 			if (event.key === 'Enter' && inputBox.value !== '') {
-				const message = document.createElement('p');
-				message.textContent = inputBox.value;
-				message.classList.add('human-user');
-				chatBox.appendChild(message);
-				inputBox.value = '';
-				document.getElementById('bottom').scrollIntoView();
+				sendMessage();
 			}
 		});
 	</script>
