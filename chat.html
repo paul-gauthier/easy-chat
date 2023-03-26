@@ -51,6 +51,9 @@
 			background-color: #f0f0f0;
 			text-align: left;
 		}
+                .chat-box span {
+                    cursor: pointer;
+                }
 		.input-box {
 			display: flex;
 			align-items: center;
@@ -113,14 +116,19 @@
                     0% { opacity: 0; transform: translateY(10px); }
                     100% { opacity: 1; transform: translateY(0); }
                 }
+                
+                /* New code for word highlighting */
+                .highlight {
+                    background-color: yellow;
+                }
 	</style>
         <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet"> 
 </head>
 <body>
 	<div class="container">
 		<div class="chat-box">
-			<p class="user">Hello!</p>
-			<p class="assistant">How can I help you?</p>
+			<p class="user"><span>Hello!</span></p>
+			<p class="assistant"><span>How</span> <span>can</span> <span>I</span> <span>help</span> <span>you?</span></p>
 </p>
 			<div id="bottom"></div>
 		</div>
@@ -142,7 +150,7 @@
                                 spinner.style.display = 'inline-block';
                                 sendButton.style.display = 'none';
 				const message = document.createElement('p');
-				message.textContent = inputBox.value;
+				message.innerHTML = inputBox.value.split(' ').map(word => `<span>${word}</span>`).join(' ');
 				message.classList.add('user');
 				chatBox.appendChild(message);
 				inputBox.value = '';
@@ -172,7 +180,7 @@
 					.then(response => response.json())
 					.then(data => {
 						const machineUserMessage = document.createElement('p');
-						machineUserMessage.textContent = data.choices[0].message.content;
+						machineUserMessage.innerHTML = data.choices[0].message.content.split(' ').map(word => `<span>${word}</span>`).join(' ');
 						machineUserMessage.classList.add('machine-user');
 						chatBox.appendChild(machineUserMessage);
 						document.getElementById('bottom').scrollIntoView();
@@ -191,6 +199,15 @@
 				sendMessage();
 			}
 		});
+                
+                /* New code for word highlighting */
+                chatBox.addEventListener('click', (event) => {
+                    if (event.target.tagName === 'SPAN') {
+                        const highlightedWords = chatBox.querySelectorAll('.highlight');
+                        highlightedWords.forEach(word => word.classList.remove('highlight'));
+                        event.target.classList.add('highlight');
+                    }
+                });
 	</script>
 </body>
 </html>
