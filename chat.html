@@ -31,7 +31,7 @@
 			border-radius: 10px;
 			margin-bottom: 30px;
 		}
-		.chat-box p, .chat-box .assistant, .chat-box .user {
+		.chat-box p, .chat-box .assistant, .chat-box .user, .chat-box .machine-user {
 			margin: 20px 0;
 			padding: 10px;
 			border-radius: 10px;
@@ -44,6 +44,10 @@
 		.chat-box .user {
 			background-color: #d9edf7;
 			text-align: right;
+		}
+                .chat-box .machine-user {
+			background-color: #f0f0f0;
+			text-align: left;
 		}
 		.input-box {
 			display: flex;
@@ -119,6 +123,37 @@
 				chatBox.appendChild(message);
 				inputBox.value = '';
 				document.getElementById('bottom').scrollIntoView();
+				
+				const messages = [];
+				const chatMessages = chatBox.querySelectorAll('p');
+				for (let i = 0; i < chatMessages.length; i++) {
+					const role = chatMessages[i].classList.contains('user') ? 'user' : 'assistant';
+					const content = chatMessages[i].textContent;
+					messages.push({ role, content });
+				}
+				
+				const requestOptions = {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+						'Authorization': 'Bearer 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'
+					},
+					body: JSON.stringify({
+						model: 'gpt-3.5-turbo',
+						messages: messages
+					})
+				};
+				
+				fetch('https://api.openai.com/v1/chat/completions', requestOptions)
+					.then(response => response.json())
+					.then(data => {
+						const machineUserMessage = document.createElement('p');
+						machineUserMessage.textContent = data.choices[0].message.content;
+						machineUserMessage.classList.add('machine-user');
+						chatBox.appendChild(machineUserMessage);
+						document.getElementById('bottom').scrollIntoView();
+					})
+					.catch(error => console.log(error));
 			}
 		};
 
