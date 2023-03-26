@@ -1,5 +1,9 @@
 ###
 
+The fa-volume-up span is being deleted by speak().
+It should be left undisturbed.
+Fix this bug.
+
 
                 
 
