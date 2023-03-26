@@ -36,6 +36,8 @@
 			padding: 10px;
 			border-radius: 10px;
 			line-height: 1.5;
+                        opacity: 0;
+                        animation: reveal 0.5s ease forwards;
 		}
 		.chat-box .assistant {
 			background-color: #e6e6e6;
@@ -104,6 +106,12 @@
                 @keyframes spin {
                     0% { transform: rotate(0deg); }
                     100% { transform: rotate(360deg); }
+                }
+                
+                /* New code for message reveal animation */
+                @keyframes reveal {
+                    0% { opacity: 0; transform: translateY(10px); }
+                    100% { opacity: 1; transform: translateY(0); }
                 }
 	</style>
         <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet"> 
