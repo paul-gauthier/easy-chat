@@ -224,9 +224,11 @@
                         speechSynthesis.speak(speech);
                     }
                 });
-                
+                         
 		const speak = (element) => {
-			var text = element.innerText;
+	    var text = element.innerText;
+            var html = element.innerHTML;
+            
 			var words = text.split(' ');
 			var utterance = new SpeechSynthesisUtterance(text);
 			var currentIndex = 0;
@@ -234,7 +236,7 @@
 			utterance.addEventListener('boundary', function(event) {
 				if (event.name === 'word') {
 					var word = words[currentIndex];
-					element.innerHTML = text;
+					element.innerHTML = html;
 					element.innerHTML = element.innerHTML.replace(word, '<span class="highlight">' + word + '</span>');
 					currentIndex++;
 				}
@@ -242,7 +244,7 @@
 
 			speechSynthesis.speak(utterance);
 			utterance.onend = function() {
-				element.innerHTML = text;
+				element.innerHTML = html;
 			};
 		}
          
