@@ -60,6 +60,9 @@
                     font-size: 20px;
                     cursor: pointer;
                 }
+                .chat-box .fa-volume-up {
+                    color: #4CAF50;
+                }
 		.input-box {
 			display: flex;
 			align-items: center;
@@ -192,6 +195,10 @@
                                                 spinner.style.display = 'none';
                                                 sendButton.style.display = 'inline-block';
                                                 inputBox.focus();
+                                                const speakButton = document.createElement('span');
+                                                speakButton.classList.add('fa', 'fa-volume-up');
+                                                speakButton.onclick = () => speak(machineUserMessage.textContent);
+                                                machineUserMessage.appendChild(speakButton);
 					})
 					.catch(error => console.log(error));
 			}
