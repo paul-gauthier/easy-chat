@@ -47,13 +47,15 @@
 			border-radius: 10px;
 			margin-bottom: 20px;
 		}
-		.input-box input[type="text"] {
+		.input-box textarea {
 			flex: 1;
 			padding: 10px;
 			border-radius: 5px;
 			border: none;
 			font-size: 16px;
 			outline: none;
+			resize: vertical;
+			min-height: 60px;
 		}
 		.input-box button {
 			background-color: #4CAF50;
@@ -81,13 +83,13 @@
 			<p class="human-user">Anyway, I have to go now. Talk to you later!</p>
 		</div>
 		<div class="input-box">
-			<input type="text" placeholder="Type your message here...">
+			<textarea placeholder="Type your message here..."></textarea>
 			<button>Send</button>
 		</div>
 	</div>
 	<script>
 		const chatBox = document.querySelector('.chat-box');
-		const inputBox = document.querySelector('.input-box input[type="text"]');
+		const inputBox = document.querySelector('.input-box textarea');
 		const sendButton = document.querySelector('.input-box button');
 
 		sendButton.addEventListener('click', () => {
