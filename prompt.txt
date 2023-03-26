@@ -1,7 +1,8 @@
 ###
 
-It is leaving every word highlighted.
-Restore the original <p> content before you highlight each word.
+Change the sample text in the <p> to have a <span> around each individual word.
+Update speakAndHighlight() so that it can still speak and highlight text like this.
+
 
 
 
