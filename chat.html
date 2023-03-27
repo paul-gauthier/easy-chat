@@ -245,8 +245,10 @@
 			speechSynthesis.speak(utterance);
 			utterance.onend = function() {
 				element.innerHTML = html;
+                                const speakerIcon = element.lastChild;
+                                speakerIcon.onclick = () => speak(element);
 			};
-		}
+		};
          
                 /* New code for adding speaker icon to user message */
                 const addUserSpeakerIcon = (message) => {

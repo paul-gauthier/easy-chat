@@ -1,8 +1,9 @@
 ###
 
-The fa-volume-up span is being deleted by speak().
-It should be left undisturbed.
-Fix this bug.
+Clicking the speaker once correctly invokes speak().
+After speak() is done, clicking the speaker does nothing.
+It should be possible to click it again and invoke speak().
+Fix this bug, without adding a duplicate 2nd speaker.
 
 
                 
