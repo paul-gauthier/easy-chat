@@ -1,17 +1,7 @@
 ###
 
-Clicking the speaker once correctly invokes speak().
-After speak() is done, clicking the speaker does nothing.
-It should be possible to click it again and invoke speak().
-Fix this bug, without adding a duplicate 2nd speaker.
+PROMPT Right now on ipad the keyboard closes when the user hits the SEND button, but it stays open if the user types the ENTER key to send the message.
+It should close when they type ENTER to send the message.
 
-
-                
-
-
-
-
-
-
-
+Fix this bug.
 

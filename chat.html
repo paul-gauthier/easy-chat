@@ -167,7 +167,7 @@
 				document.getElementById('bottom').scrollIntoView();
 				
 				const messages = [];
-				const chatMessages = chatBox.querySelectorAll('p');
+				const chatMessages = chatBox.querySelectorAll('.user, .assistant, .machine-user');
 				for (let i = 0; i < chatMessages.length; i++) {
 					const role = chatMessages[i].classList.contains('user') ? 'user' : 'assistant';
 					const content = chatMessages[i].textContent;
@@ -194,6 +194,7 @@
 						machineUserMessage.classList.add('machine-user');
 						chatBox.insertBefore(machineUserMessage, document.getElementById('bottom'));
 						document.getElementById('bottom').scrollIntoView();
+                                                inputBox.blur();
                                                 spinner.style.display = 'none';
                                                 sendButton.style.display = 'inline-block';
                                                 inputBox.focus();
