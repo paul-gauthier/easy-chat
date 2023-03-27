@@ -211,7 +211,8 @@
 
 		inputBox.addEventListener('keydown', (event) => {
 			if (event.key === 'Enter' && inputBox.value !== '') {
-				sendMessage();
+				sendMessage(); 
+                                event.preventDefault();
 			}
 		});
                 
