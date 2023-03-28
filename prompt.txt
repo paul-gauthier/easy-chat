@@ -1,3 +1,16 @@
 ###
 
-PROMPT inputBox.addEventListener('keydown')... need so suppress the event. Don't let the enter key be input to the textarea.
+Write a js function suitable for embedding in an html page which takes markdown text and turns it into html, but each word in the text should be contained in its own span with class="word".
+Be sure not to wrap html tags in spans.
+Only wrap words which are made up of alpha characters.
+
+You can use the marked library, like in this examples:
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    document.getElementById('content').innerHTML =
+      marked.parse('# Marked in browser\n\nRendered by **marked**.');
+  </script>
+  
+
+
