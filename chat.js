@@ -124,8 +124,8 @@ function speak(element) {
         const textElements = element.querySelectorAll('span');
         const textContent = Array.from(textElements).map(el => el.textContent).join(' ');
 
-      const utterance = new SpeechSynthesisUtterance(textContent);
-      utterance.rate = 0.75;
+        const utterance = new SpeechSynthesisUtterance(textContent);
+        utterance.rate = 0.75;
         utterance.onboundary = (event) => {
             if (event.name === 'word') {
                 const charIndex = event.charIndex;
