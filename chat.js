@@ -50,7 +50,7 @@ const sendMessage = () => {
 
         const messages = [];
         messages.push({ role: 'system', content: 'You are a helpful assistant. You are speaking to a child who is just learning to read. Use simple words. Use short sentences. Use short paragraphs.' });
-        const chatMessages = chatBox.querySelectorAll('.user, .assistant, .machine-user');
+        const chatMessages = chatBox.querySelectorAll('.user, .assistant, .assistant');
         for (let i = 0; i < chatMessages.length; i++) {
             const role = chatMessages[i].classList.contains('user') ? 'user' : 'assistant';
             const content = chatMessages[i].textContent;
@@ -72,10 +72,10 @@ const sendMessage = () => {
         fetch('https://api.openai.com/v1/chat/completions', requestOptions)
             .then(response => response.json())
             .then(data => {
-                const machineUserMessage = document.createElement('p');
-                machineUserMessage.innerHTML = markdownToHtmlWithWordSpans(data.choices[0].message.content)
-                machineUserMessage.classList.add('machine-user');
-                chatBox.insertBefore(machineUserMessage, document.getElementById('bottom'));
+                const assistantMessage = document.createElement('p');
+                assistantMessage.innerHTML = markdownToHtmlWithWordSpans(data.choices[0].message.content)
+                assistantMessage.classList.add('assistant');
+                chatBox.insertBefore(assistantMessage, document.getElementById('bottom'));
                 document.getElementById('bottom').scrollIntoView();
                 inputBox.blur();
                 spinner.style.display = 'none';
@@ -83,8 +83,8 @@ const sendMessage = () => {
                 inputBox.focus();
                 const speakButton = document.createElement('span');
                 speakButton.classList.add('fa', 'fa-volume-up');
-                speakButton.onclick = () => speak(machineUserMessage);
-                machineUserMessage.appendChild(speakButton);
+                speakButton.onclick = () => speak(assistantMessage);
+                assistantMessage.appendChild(speakButton);
             })
             .catch(error => console.log(error));
     }
