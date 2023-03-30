@@ -49,6 +49,7 @@ const sendMessage = () => {
         document.getElementById('bottom').scrollIntoView();
 
         const messages = [];
+        messages.push({ role: 'system', content: 'You are a helpful assistant. You are speaking to a child who is just learning to read. Use simple words. Use short sentences. Use short paragraphs.' });
         const chatMessages = chatBox.querySelectorAll('.user, .assistant, .machine-user');
         for (let i = 0; i < chatMessages.length; i++) {
             const role = chatMessages[i].classList.contains('user') ? 'user' : 'assistant';
@@ -165,4 +166,3 @@ const addUserSpeakerIcon = (message) => {
     speakerIcon.onclick = () => speak(message);
     message.appendChild(speakerIcon);
 };
-
