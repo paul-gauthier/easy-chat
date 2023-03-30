@@ -1,24 +1,36 @@
 
-function markdownToHtmlWithWordSpans(markdownText) {
-    // Convert markdown to HTML
-    var html = marked.parse(markdownText);
+// Generate a function markdownToHtmlWithWordSpans
+// that takes a string of markdown and returns a string of HTML
+// with <span> tags around each word
+// "Hello, **world**!" -> "Hello, <strong><span>world</span></strong>!"
+// '''
+// List:
+// - item1
+// - item2
+// - item3
+// '''
+// ->
+// '''
+// <p>List:</p>
+// <ul>
+// <li><span>item1</span></li>
+// <li><span>item2</span></li>
+// <li><span>item3</span></li>
+// </ul>
+// '''
+const markdownToHtmlWithWordSpans = (markdown) => {
+    const html = marked.parse(markdown);
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const elements = doc.querySelectorAll('p, li');
+    elements.forEach(element => {
+        const words = element.textContent.split(' ');
+        element.innerHTML = words.map(word => `<span>${word}</span>`).join(' ');
+    });
+    return doc.body.innerHTML;
+};
 
-    // Split HTML into words
-    var words = html.split(/\s+/);
 
-    // Loop through each word and wrap in span if it's made up of alpha characters
-    for (var i = 0; i < words.length; i++) {
-        var word = words[i];
-        if (/^[a-zA-Z]+$/.test(word)) {
-            words[i] = '<span class="word">' + word + '</span>';
-        }
-    }
-
-    // Join words back into HTML
-    html = words.join(' ');
-
-    return html;
-}
 const chatBox = document.querySelector('.chat-box');
 const inputBox = document.querySelector('.input-box textarea');
 const sendButton = document.querySelector('.input-box button');
