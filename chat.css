@@ -1,98 +1,115 @@
-* { 
-    font-family: 'Open-Dyslexic', sans-serif; 
+* {
+    font-family: 'Open-Dyslexic', sans-serif;
     font-size: 24px;
 }
+
 body {
-margin: 0;
-padding: 0;
-background-color: #f2f2f2;
-        height: 100vh;
-        overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    height: 100vh;
+    overflow: hidden;
 }
+
 .container {
-max-width: 800px;
-margin: 0 auto;
-padding: 20px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
-.chat-box { 
-flex: 1;
-overflow-y: scroll;
-padding: 20px;
-background-color: #fff;
-border-radius: 10px;
-margin-bottom: 30px;
+
+.chat-box {
+    flex: 1;
+    overflow-y: scroll;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
-.chat-box p, .chat-box .assistant, .chat-box .user, .chat-box .machine-user {
-margin: 20px 0;
-padding: 10px;
-border-radius: 10px;
-line-height: 1.5;
-        opacity: 0;
-        animation: reveal 0.5s ease forwards;
-}
-.chat-box .assistant {
-background-color: #e6e6e6;
-text-align: left;
-}
-.chat-box .user {
-background-color: #d9edf7;
-text-align: right;
-}
+
+.chat-box p,
+.chat-box .assistant,
+.chat-box .user,
 .chat-box .machine-user {
-background-color: #f0f0f0;
-text-align: left;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 1.5;
+    opacity: 0;
+    animation: reveal 0.5s ease forwards;
 }
+
+.chat-box .assistant {
+    background-color: #e6e6e6;
+    text-align: left;
+}
+
+.chat-box .user {
+    background-color: #d9edf7;
+    text-align: right;
+}
+
+.chat-box .machine-user {
+    background-color: #f0f0f0;
+    text-align: left;
+}
+
 .chat-box span {
     cursor: pointer;
 }
+
 .chat-box .fa {
     display: inline-block;
     margin-left: 10px;
     font-size: 20px;
     cursor: pointer;
 }
+
 .chat-box .fa-volume-up {
     color: #4CAF50;
 }
+
 .input-box {
-display: flex;
-align-items: center;
-position: sticky;
-bottom: 0;
-background-color: #fff;
-padding: 20px;
-border-radius: 10px;
-margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
+
 .input-box textarea {
-flex: 1;
-padding: 10px;
-border-radius: 5px;
-border: none;
-outline: none;
-resize: vertical;
-min-height: 60px;
-transform: translateZ(0);
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    resize: vertical;
+    min-height: 60px;
+    transform: translateZ(0);
 }
+
 .input-box button {
-background-color: #4CAF50;
-color: #fff;
-border: none;
-padding: 10px 20px;
-border-radius: 5px;
-cursor: pointer;
-margin-left: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
 }
-.input-box + div {
-        height: 20px;
+
+.input-box+div {
+    height: 20px;
 }
 
 /* New code for smaller font size on mobile */
 @media only screen and (max-width: 600px) {
-    * { 
+    * {
         font-size: 14px;
     }
 }
@@ -110,14 +127,26 @@ margin-left: 10px;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* New code for message reveal animation */
 @keyframes reveal {
-    0% { opacity: 0; transform: translateY(10px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* New code for word highlighting */
