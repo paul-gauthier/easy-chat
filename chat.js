@@ -106,7 +106,7 @@ chatBox.addEventListener('click', (event) => {
         highlightedWords.forEach(word => word.classList.remove('highlight'));
         event.target.classList.add('highlight');
         const textToSpeak = event.target.textContent;
-      const speech = new SpeechSynthesisUtterance(textToSpeak, { rate: 0.5 } );
+      const speech = new SpeechSynthesisUtterance(textToSpeak);
         speechSynthesis.speak(speech);
     }
 });
@@ -124,7 +124,8 @@ function speak(element) {
         const textElements = element.querySelectorAll('span');
         const textContent = Array.from(textElements).map(el => el.textContent).join(' ');
 
-        const utterance = new SpeechSynthesisUtterance(textContent);
+      const utterance = new SpeechSynthesisUtterance(textContent);
+      utterance.rate = 0.75;
         utterance.onboundary = (event) => {
             if (event.name === 'word') {
                 const charIndex = event.charIndex;
