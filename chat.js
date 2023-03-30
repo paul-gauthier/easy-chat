@@ -105,7 +105,7 @@ chatBox.addEventListener('click', (event) => {
         highlightedWords.forEach(word => word.classList.remove('highlight'));
         event.target.classList.add('highlight');
         const textToSpeak = event.target.textContent;
-        const speech = new SpeechSynthesisUtterance(textToSpeak);
+      const speech = new SpeechSynthesisUtterance(textToSpeak, { rate: 0.5 } );
         speechSynthesis.speak(speech);
     }
 });
