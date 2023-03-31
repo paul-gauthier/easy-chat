@@ -1,4 +1,4 @@
 
-Move the bearer token into a global variable. Just the token itself, not the Bearer keyword.
+Obfuscate the value of token in the source file.
 
 ###
