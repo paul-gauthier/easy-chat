@@ -1,0 +1,10 @@
+.BC.*
+*~
+OLD*
+.svn
+tmp*
+*.pyc
+.DS_Store
+.venv
+.env
+token.js
