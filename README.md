@@ -27,34 +27,31 @@ After that, I kept feeding it the entire html/js/css blob and requesting changes
 Most of my prompts were basically feature requests, like you might file in a JIRA ticket.
 Here's an example prompt:
 
-> When the user adds a new message, add a speaker icon which will read the user's message aloud.
+> Use text-to-voice to speak the highlighted word.
 
 Which resulted in
-[these changes](https://github.com/paul-gauthier/easy-chat/commit/5a277084d4892227067922ea5127d5c0a625a02c) to the code, which modified some html and js:
+[these changes](https://github.com/paul-gauthier/easy-chat/commit/62e0862ce0cf1017082e30ec7fa4034cfaf80137) to the code:
 
 ```
 diff --git a/chat.html b/chat.html
-index 2cb7e08..7e07c16 100644
+index 4ed5668..7d3d563 100644
 --- a/chat.html
 +++ b/chat.html
-@@ -229,6 +229,20 @@
-                     const speech = new SpeechSynthesisUtterance(text);
-                     speechSynthesis.speak(speech);
-                 };
+@@ -206,8 +206,17 @@
+                         const highlightedWords = chatBox.querySelectorAll('.highlight');
+                         highlightedWords.forEach(word => word.classList.remove('highlight'));
+                         event.target.classList.add('highlight');
++                        const textToSpeak = event.target.textContent;
++                        const speech = new SpeechSynthesisUtterance(textToSpeak);
++                        speechSynthesis.speak(speech);
+                     }
+                 });
 +
-+                /* New code for adding speaker icon to user message */
-+                const addUserSpeakerIcon = (message) => {
-+                    const speakerIcon = document.createElement('span');
-+                    speakerIcon.classList.add('fa', 'fa-volume-up');
-+                    speakerIcon.onclick = () => speak(message.textContent);
-+                    message.appendChild(speakerIcon);
++                /* New code for text-to-speech */
++                const speak = (text) => {
++                    const speech = new SpeechSynthesisUtterance(text);
++                    speechSynthesis.speak(speech);
 +                };
-+
-+                chatBox.addEventListener('DOMNodeInserted', (event) => {
-+                    if (event.target.classList.contains('user')) {
-+                        addUserSpeakerIcon(event.target);
-+                    }
-+                });
         </script>
  </body>
  </html>
