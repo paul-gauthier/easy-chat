@@ -60,8 +60,8 @@ const sendMessage = () => {
         const requestOptions = {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'Bearer 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'
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${token}`,
             },
             body: JSON.stringify({
                 model: 'gpt-3.5-turbo',

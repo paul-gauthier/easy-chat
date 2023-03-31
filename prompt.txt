@@ -1,3 +1,4 @@
-###
 
-Move the speaker icons, so they sit outside each message bubble on the right side of the bubble, vertically centered on the height of the bubble.
+Move the bearer token into a global variable. Just the token itself, not the Bearer keyword.
+
+###
