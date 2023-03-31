@@ -97,3 +97,8 @@ Do not provide explanations!
 My workflow broke down when the size of the prompt and codebase exceeded the context window for ChatGPT 3.5 turbo.
 I experimented with numerous other workflows to try and work around this limit, but with little consistent success.
 
+Ultimately I refactored the js and css into their own files, and began feeding ChatGPT excerpts from the code that were relevant to each change I needed.
+This wasn't always successful, as it often wanted to (re)write the code that I wasn't showing it.
+
+I look forward to GPT4 API access, where I can take advantage of the 32k token context window.
+
