@@ -59,7 +59,7 @@ index 4ed5668..7d3d563 100644
  </html>
 ```                        
 
-One of the most impressive changes when I asked it to take what was currently an empty shell of a chat UI and
+One of the most impressive changes was when I asked it to take what was currently an empty shell of a chat UI and
 [wire it up to the OpenAI chat completions API](https://github.com/paul-gauthier/easy-chat/commit/61326c036fa7888e58231f4bcb4f13d0f889ea0c).
 I don't have a record of the exact prompt I used, but I basically said "wire it up like this" and pasted
 a dozen lines of the `curl` example from the [API reference docs](https://platform.openai.com/docs/api-reference/chat).
