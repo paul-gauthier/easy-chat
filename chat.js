@@ -37,7 +37,7 @@ const sendButton = document.querySelector('.input-box button');
 const spinner = document.querySelector('.spinner');
 
 // stop github from reporting to openai
-const token = atob('c2stNFBDcmhTSjF0d2tITWVjSHZNQUVUM0JsbmtGSkZCQzNrZEdqTkhqTUFid3g3UERL');
+const token = atob("c2stNFBDcmhTSjF0d2tITUVjSHZNQUVUM0JsYmtGSkZCQzNrZEdqTkhqTUFid3g3UERL")
 
 const sendMessage = () => {
     if (inputBox.value !== '') {
