@@ -59,15 +59,15 @@ index 4ed5668..7d3d563 100644
  </html>
 ```                        
 
-I didn't start recording the actual prompts until I was a couple of dozen commits into the process.
-I was kind of suprised at how much I was accomplishing by treating ChatGPT as a junior web developer.
-
 One of the most impressive changes was to take the empty shell of a chat UI and
 [wire it up to the OpenAI chat completions API](https://github.com/paul-gauthier/easy-chat/commit/61326c036fa7888e58231f4bcb4f13d0f889ea0c).
 I don't have a record of the exact prompt I used, but I basically said "wire it up like this" and pasted
 a dozen lines of the `curl` example from the [API reference docs](https://platform.openai.com/docs/api-reference/chat).
 
-You can see many of the prompts I used in the
+I didn't start recording the actual prompts until I was a couple of dozen commits into the process.
+I was kind of suprised at how much I was accomplishing by treating ChatGPT as a junior web developer.
+
+Regardless, you can see many of the prompts I used in the
 [git history of this repo](https://github.com/paul-gauthier/easy-chat/commits/main).
 Any commit that starts with "PROMPT" was created almost entirely by ChatGPT.
 If the commit starts with "asked for ...", that also means ChatGPT did the coding, but I didn't record the exact prompt.
