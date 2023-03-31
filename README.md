@@ -1,18 +1,17 @@
 # Easy Chat
 
 [Easy Chat](https://paul-gauthier.github.io/easy-chat/)
-is a user interface for ChatGPT, designed specifically for early readers.
+is a user interface for ChatGPT, designed specifically for young readers.
 
 ## Features
 
-- Simple and intuitive user interface.
-- Typography and text spacing which is helpful for early or struggling readers.
-- Large, easy-to-read text in Open Dyslexic font.
-- Supports text-to-speech of individual words by clicking on them.
-- Immersive Reading of entire messages by clicking the speaker button -- highlights each word as it is read aloud at a moderate reading speed.
+- Typography, layout and text spacing which is helpful for young, early or struggling readers.
+- Large, easy-to-read text in the Open Dyslexic font.
+- Text-to-speech of individual words by clicking on any word.
+- Text-to-speech of entire passages with Immersive Reading (highlights each word as it is read aloud at a moderate reading speed). Click on the speaker icons.
 - A system prompt that tells ChatGPT it is speaking to a child and requesting it to use common words, short sentences and short paragraphs.
 
-![Screenshot of Easy Chat](https://raw.githubusercontent.com/paul-gauthier/easy-chat/main/screenshot.png)
+![Screenshot of Easy Chat](screenshot.gif)
 
 ## Usage
 
