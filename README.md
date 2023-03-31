@@ -14,6 +14,7 @@ Easy Chat is a user interface for ChatGPT, designed specifically for early reade
 
 Try it out here:
 
-`Easy Chat <https://paul-gauthier.github.io/easy-chat/>`_
+[Easy Chat](https://paul-gauthier.github.io/easy-chat/)
+
 
 
