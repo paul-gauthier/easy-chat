@@ -1,7 +1,4 @@
 
-what's the simplest way to set up a cloud proxy to add an authentication header to every api request?
-In GCP.
-Requests should be proxied with the original request path and substitute the host with https://api.openai.com.
-The secure bearer token should be retrieved from a GCP secret.
+Can you make this proxy respond properly to CORS preflight requests?
 
 ###

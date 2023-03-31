@@ -19,9 +19,12 @@ def get_bearer_token():
 
 app = Flask(__name__)
 
-@app.route('/', defaults={'path': ''}, methods=['GET', 'POST', 'PUT', 'DELETE', 'PATCH'])
-@app.route('/<path:path>', methods=['GET', 'POST', 'PUT', 'DELETE', 'PATCH'])
+@app.route('/', defaults={'path': ''}, methods=['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'])
+@app.route('/<path:path>', methods=['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'])
 def proxy_function(path):
+    if request.method == 'OPTIONS':
+        return handle_cors_preflight_request()
+
     host = 'api.openai.com'
     base_url = 'https://' + host
     target_url = f'{base_url}/{path}'
@@ -40,11 +43,20 @@ def proxy_function(path):
 
         headers = {key: value for key, value in response.headers.items()}
         headers.pop('Transfer-Encoding', None)
+        headers.pop('Content-Encoding', None)
 
         return Response(response.content, response.status_code, headers)
 
     except requests.exceptions.RequestException as e:
         return make_response(json.dumps({'error': str(e)}), 500)
+
+def handle_cors_preflight_request():
+    headers = {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization, Host'
+    }
+    return Response('', 204, headers)
 
 def lambda_handler(event, context):
     return app(event, context)
