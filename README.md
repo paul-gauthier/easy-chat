@@ -22,7 +22,7 @@ Try it out here: [Easy Chat](https://paul-gauthier.github.io/easy-chat/)
 
 Almost all the code in this repository was written by ChatGPT.
 I started by asking it to create the html for a simple chat app, with embedded css and js.
-After that, I kept feeding it the entire html/js/css blob and requesting changes.
+After that, I kept feeding it the entire html/js/css blob and requesting changes, bug fixes, new features and improvements.
 
 ### Example prompts
 
@@ -59,12 +59,12 @@ index 4ed5668..7d3d563 100644
  </html>
 ```                        
 
-One of the most impressive changes was to take the empty shell of a chat UI and
+One of the most impressive changes when I asked it to take what was currently an empty shell of a chat UI and
 [wire it up to the OpenAI chat completions API](https://github.com/paul-gauthier/easy-chat/commit/61326c036fa7888e58231f4bcb4f13d0f889ea0c).
 I don't have a record of the exact prompt I used, but I basically said "wire it up like this" and pasted
 a dozen lines of the `curl` example from the [API reference docs](https://platform.openai.com/docs/api-reference/chat).
 
-I didn't start recording the actual prompts until I was a couple of dozen commits into the process.
+I didn't start recording the actual prompts I was using until I was a couple of dozen commits into the process.
 I was kind of suprised at how much I was accomplishing by treating ChatGPT as a junior web developer.
 
 Regardless, you can see many of the prompts I used in the
@@ -77,21 +77,21 @@ If the commit starts with "asked for ...", that also means ChatGPT did the codin
 My workflow for each change was dead simple:
 
   - I wrote my plain English change request in a file called `prompt.txt`.
-  - Fed the prompt and the entire codebase to ChatGPT via the [aichat](https://github.com/sigoden/aichat) tool:
+  
+  - I fed the prompt and the entire codebase to ChatGPT via the [aichat](https://github.com/sigoden/aichat) tool. ChatGPT returns a modified version of the codebase, implementing my requested changes.
     - `cat prompt.txt chat.html | aichat -r webdev > tmp.html && cp tmp.html chat.html`
-  - Did a `git diff` to review what ChatGPT had changed and tried out the resulting system.
-  - If it was good, `git commit`
-  - If it wasn't right, I would use `git stash` to discard the changes, adjust the prompt and try again.
 
-I used the roles feature of [aichat](https://github.com/sigoden/aichat) to set a system prompt, which was along these lines:
+  - I did a `git diff` to review what ChatGPT had changed and tried out the resulting system.
+    - If it was good, `git commit`
+    - If it wasn't right, I would use `git stash` to discard the changes, adjust the prompt and try again.
 
-```
-I want you to act as a web development expert.
-I want you to answer only with code.
-Make the requested change to the provided code and output the changed code.
-MAKE NO OTHER CHANGES!
-Do not provide explanations!
-```
+I used the roles feature of [aichat](https://github.com/sigoden/aichat) to set up a `webdev` role with a system prompt like this:
+
+> I want you to act as a web development expert.
+> I want you to answer only with code.
+> Make the requested change to the provided code and output the changed code.
+> MAKE NO OTHER CHANGES!
+> Do not provide explanations!
 
 ### Limitations
 
