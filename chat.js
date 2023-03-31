@@ -36,9 +36,6 @@ const inputBox = document.querySelector('.input-box textarea');
 const sendButton = document.querySelector('.input-box button');
 const spinner = document.querySelector('.spinner');
 
-// stop github from reporting to openai
-const token = atob("c2stNFBDcmhTSjF0d2tITUVjSHZNQUVUM0JsYmtGSkZCQzNrZEdqTkhqTUFid3g3UERL")
-
 const sendMessage = () => {
     if (inputBox.value !== '') {
         spinner.style.display = 'inline-block';
@@ -64,7 +61,6 @@ const sendMessage = () => {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
-              'Authorization': `Bearer ${token}`,
             },
             body: JSON.stringify({
                 model: 'gpt-3.5-turbo',
@@ -72,7 +68,7 @@ const sendMessage = () => {
             })
         };
 
-        fetch('https://api.openai.com/v1/chat/completions', requestOptions)
+        fetch('https://cloud-proxy-35h462xo6a-uw.a.run.app/v1/chat/completions', requestOptions)
             .then(response => response.json())
             .then(data => {
                 const assistantMessage = document.createElement('p');
