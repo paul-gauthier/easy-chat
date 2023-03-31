@@ -28,34 +28,38 @@ Most of my prompts were basically feature requests, like you might file in a JIR
 Here's an example prompt:
 
 ```
-Start with keyboard focus on the input box.
-Put focus back there after sending each messages.
+When the user adds a new message, add a speaker icon which will read the user's message aloud.
 ```
 
-Which resulted in [these changes](https://github.com/paul-gauthier/easy-chat/commit/ec5ad8daf2145afcde2b8804bb7a7c88b137deb3) to the code, which modified some html and js:
+Which resulted in
+[these changes](https://github.com/paul-gauthier/easy-chat/commit/5a277084d4892227067922ea5127d5c0a625a02c) to the code, which modified some html and js:
 
 ```
 diff --git a/chat.html b/chat.html
-index 96f909d..95c0ab8 100644
+index 2cb7e08..7e07c16 100644
 --- a/chat.html
 +++ b/chat.html
-@@ -125,7 +125,7 @@
-                        <div id="bottom"></div>
-                </div>
-                <div class="input-box">
--                       <textarea placeholder="Type your message here..." autofocus></textarea>
-+                       <textarea placeholder="Type your message here..."></textarea>
-                        <button>Send</button>
-                         <div class="spinner"></div>
-                </div>
-@@ -178,7 +178,6 @@
-                                                document.getElementById('bottom').scrollIntoView();
-                                                 spinner.style.display = 'none';
-                                                 sendButton.style.display = 'inline-block';
--                                                inputBox.focus();
-                                        })
-                                        .catch(error => console.log(error));
-                        }
+@@ -229,6 +229,20 @@
+                     const speech = new SpeechSynthesisUtterance(text);
+                     speechSynthesis.speak(speech);
+                 };
++
++                /* New code for adding speaker icon to user message */
++                const addUserSpeakerIcon = (message) => {
++                    const speakerIcon = document.createElement('span');
++                    speakerIcon.classList.add('fa', 'fa-volume-up');
++                    speakerIcon.onclick = () => speak(message.textContent);
++                    message.appendChild(speakerIcon);
++                };
++
++                chatBox.addEventListener('DOMNodeInserted', (event) => {
++                    if (event.target.classList.contains('user')) {
++                        addUserSpeakerIcon(event.target);
++                    }
++                });
+        </script>
+ </body>
+ </html>
 ```                        
 
 I didn't start recording the actual prompts until I was a couple of dozen commits into the process.
