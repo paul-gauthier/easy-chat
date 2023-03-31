@@ -62,7 +62,7 @@ I was kind of suprised at how much I was accomplishing by treating ChatGPT as a 
 
 One of the most impressive changes was to take the empty shell of a chat UI and
 [wire it up to the OpenAI chat completions API](https://github.com/paul-gauthier/easy-chat/commit/61326c036fa7888e58231f4bcb4f13d0f889ea0c).
-I don't have a record of the exact prompt I used, but I basically said "wire it up" and pasted
+I don't have a record of the exact prompt I used, but I basically said "wire it up like this" and pasted
 a dozen lines of the `curl` example from the [API reference docs](https://platform.openai.com/docs/api-reference/chat).
 
 You can see many of the prompts I used in the
@@ -74,7 +74,7 @@ If the commit starts with "asked for ...", that also means ChatGPT did the codin
 
 My workflow for each change was dead simple:
 
-  - I placed my change request in a file called `prompt.txt`.
+  - I wrote my plain English change request in a file called `prompt.txt`.
   - Fed the prompt and the entire codebase to ChatGPT via the [aichat](https://github.com/sigoden/aichat) tool:
     - `cat prompt.txt chat.html | aichat -r webdev > tmp.html && cp tmp.html chat.html`
   - Did a `git diff` to review what ChatGPT had changed and tried out the resulting system.
@@ -99,5 +99,5 @@ I experimented with numerous other workflows to try and work around this limit, 
 Ultimately I refactored the js and css into their own files, and began feeding ChatGPT excerpts from the code that were relevant to each change I needed.
 This wasn't always successful, as it often wanted to (re)write the code that I wasn't showing it.
 
-I look forward to GPT4 API access, where I can take advantage of the 32k token context window.
+I look forward to GPT-4 API access, where I can take advantage of the 32k token context window.
 
