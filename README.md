@@ -3,6 +3,8 @@
 [Easy Chat](https://paul-gauthier.github.io/easy-chat/)
 is a user interface for ChatGPT, designed specifically for early readers.
 
+!(screenshot.png)
+
 ## Features
 
 - Simple and intuitive user interface.
