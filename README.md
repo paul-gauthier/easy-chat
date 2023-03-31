@@ -27,9 +27,7 @@ After that, I kept feeding it the entire html/js/css blob and requesting changes
 Most of my prompts were basically feature requests, like you might file in a JIRA ticket.
 Here's an example prompt:
 
-```
-When the user adds a new message, add a speaker icon which will read the user's message aloud.
-```
+> When the user adds a new message, add a speaker icon which will read the user's message aloud.
 
 Which resulted in
 [these changes](https://github.com/paul-gauthier/easy-chat/commit/5a277084d4892227067922ea5127d5c0a625a02c) to the code, which modified some html and js:
