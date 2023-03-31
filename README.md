@@ -3,8 +3,6 @@
 [Easy Chat](https://paul-gauthier.github.io/easy-chat/)
 is a user interface for ChatGPT, designed specifically for early readers.
 
-![Screenshot of Easy Chat](https://raw.githubusercontent.com/paul-gauthier/easy-chat/main/screenshot.png)
-
 ## Features
 
 - Simple and intuitive user interface.
@@ -13,6 +11,8 @@ is a user interface for ChatGPT, designed specifically for early readers.
 - Supports text-to-speech of individual words by clicking on them.
 - Immersive Reading of entire messages by clicking the speaker button -- highlights each word as it is read aloud at a moderate reading speed.
 - A system prompt that tells ChatGPT it is speaking to a child and requesting it to use common words, short sentences and short paragraphs.
+
+![Screenshot of Easy Chat](https://raw.githubusercontent.com/paul-gauthier/easy-chat/main/screenshot.png)
 
 ## Usage
 
