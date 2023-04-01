@@ -1,5 +1,5 @@
 
-### [aac1a743062cea7f5fa806da3de843c2ac531238](https://github.com/paul-gauthier/easy-chat/commit/aac1a743062cea7f5fa806da3de843c2ac531238)
+### [aac1a743062cea7f5fa806da3de843c2ac531238](https://github.com/paul-gauthier/easy-chat/commit/aac1a743062cea7f5fa806da3de843c2ac531238)<a name="aac1a743062cea7f5fa806da3de843c2ac531238"></a>
 
 > asked for a simple html chat page with embedded css/js
 ```
@@ -124,7 +124,7 @@ index 0000000..64d1f74
 +</html>
 
 ```
-### [37068c5d32504b2f4b6446f758bfc46172e50c0c](https://github.com/paul-gauthier/easy-chat/commit/37068c5d32504b2f4b6446f758bfc46172e50c0c)
+### [37068c5d32504b2f4b6446f758bfc46172e50c0c](https://github.com/paul-gauthier/easy-chat/commit/37068c5d32504b2f4b6446f758bfc46172e50c0c)<a name="37068c5d32504b2f4b6446f758bfc46172e50c0c"></a>
 
 > asked for some more whitespace
 ```
@@ -144,7 +144,7 @@ index 64d1f74..a2e0659 100644
  			font-size: 16px;
 
 ```
-### [41a28041ca4ffc5ce6b7682fb86e5449b5f78d58](https://github.com/paul-gauthier/easy-chat/commit/41a28041ca4ffc5ce6b7682fb86e5449b5f78d58)
+### [41a28041ca4ffc5ce6b7682fb86e5449b5f78d58](https://github.com/paul-gauthier/easy-chat/commit/41a28041ca4ffc5ce6b7682fb86e5449b5f78d58)<a name="41a28041ca4ffc5ce6b7682fb86e5449b5f78d58"></a>
 
 > asked to move the send button to the right of the input box
 ```
@@ -173,7 +173,7 @@ index a2e0659..02f2ea6 100644
  			border: none;
 
 ```
-### [8e4d75fbfcc87869677189b4113d33cfd584fc02](https://github.com/paul-gauthier/easy-chat/commit/8e4d75fbfcc87869677189b4113d33cfd584fc02)
+### [8e4d75fbfcc87869677189b4113d33cfd584fc02](https://github.com/paul-gauthier/easy-chat/commit/8e4d75fbfcc87869677189b4113d33cfd584fc02)<a name="8e4d75fbfcc87869677189b4113d33cfd584fc02"></a>
 
 > asked for Open Dyslexic font
 ```
@@ -194,7 +194,7 @@ index 02f2ea6..3ba5de4 100644
  			margin: 0 auto;
 
 ```
-### [9e4d958a34798f725c40adcb82d68b9dca9e5173](https://github.com/paul-gauthier/easy-chat/commit/9e4d958a34798f725c40adcb82d68b9dca9e5173)
+### [9e4d958a34798f725c40adcb82d68b9dca9e5173](https://github.com/paul-gauthier/easy-chat/commit/9e4d958a34798f725c40adcb82d68b9dca9e5173)<a name="9e4d958a34798f725c40adcb82d68b9dca9e5173"></a>
 
 > asked for a bigger font size
 ```
@@ -219,7 +219,7 @@ index 3ba5de4..bfef0bf 100644
  		.chat-box .user1 {
 
 ```
-### [7276cd799a5983adc28c66b1807620e820c87c01](https://github.com/paul-gauthier/easy-chat/commit/7276cd799a5983adc28c66b1807620e820c87c01)
+### [7276cd799a5983adc28c66b1807620e820c87c01](https://github.com/paul-gauthier/easy-chat/commit/7276cd799a5983adc28c66b1807620e820c87c01)<a name="7276cd799a5983adc28c66b1807620e820c87c01"></a>
 
 > asked for more whitespace around chat text
 ```
@@ -250,7 +250,7 @@ index bfef0bf..6549952 100644
  			font-size: 24px;
 
 ```
-### [3a11dfaf8383472c448912877cebc9daae6802d7](https://github.com/paul-gauthier/easy-chat/commit/3a11dfaf8383472c448912877cebc9daae6802d7)
+### [3a11dfaf8383472c448912877cebc9daae6802d7](https://github.com/paul-gauthier/easy-chat/commit/3a11dfaf8383472c448912877cebc9daae6802d7)<a name="3a11dfaf8383472c448912877cebc9daae6802d7"></a>
 
 > tweaking font
 ```
@@ -273,7 +273,7 @@ index 6549952..3802093 100644
  			margin: 0 auto;
 
 ```
-### [2353314992673372e50ec271410be60d7a54f6a4](https://github.com/paul-gauthier/easy-chat/commit/2353314992673372e50ec271410be60d7a54f6a4)
+### [2353314992673372e50ec271410be60d7a54f6a4](https://github.com/paul-gauthier/easy-chat/commit/2353314992673372e50ec271410be60d7a54f6a4)<a name="2353314992673372e50ec271410be60d7a54f6a4"></a>
 
 > fixed Open-Dyslexic font
 ```
@@ -303,7 +303,7 @@ index 3802093..f74a11e 100644
  	<div class="container">
 
 ```
-### [02c0ed88fec200ea03289cd96e3e5ed3a711f814](https://github.com/paul-gauthier/easy-chat/commit/02c0ed88fec200ea03289cd96e3e5ed3a711f814)
+### [02c0ed88fec200ea03289cd96e3e5ed3a711f814](https://github.com/paul-gauthier/easy-chat/commit/02c0ed88fec200ea03289cd96e3e5ed3a711f814)<a name="02c0ed88fec200ea03289cd96e3e5ed3a711f814"></a>
 
 > asked to change the labels from user1/user2 to machine/human
 ```
@@ -377,7 +377,7 @@ index f74a11e..6fd2ba3 100644
  				chatBox.scrollTop = chatBox.scrollHeight;
 
 ```
-### [1681b4fc47f43ce81bf9fa2f611d85149b2cf8d6](https://github.com/paul-gauthier/easy-chat/commit/1681b4fc47f43ce81bf9fa2f611d85149b2cf8d6)
+### [1681b4fc47f43ce81bf9fa2f611d85149b2cf8d6](https://github.com/paul-gauthier/easy-chat/commit/1681b4fc47f43ce81bf9fa2f611d85149b2cf8d6)<a name="1681b4fc47f43ce81bf9fa2f611d85149b2cf8d6"></a>
 
 > asked for a bigger, multiline text area
 ```
@@ -421,7 +421,7 @@ index 6fd2ba3..b510dae 100644
  		sendButton.addEventListener('click', () => {
 
 ```
-### [d7ee8a425c409d5aa504f47f93d918b478cfa1bd](https://github.com/paul-gauthier/easy-chat/commit/d7ee8a425c409d5aa504f47f93d918b478cfa1bd)
+### [d7ee8a425c409d5aa504f47f93d918b478cfa1bd](https://github.com/paul-gauthier/easy-chat/commit/d7ee8a425c409d5aa504f47f93d918b478cfa1bd)<a name="d7ee8a425c409d5aa504f47f93d918b478cfa1bd"></a>
 
 > asked for a bigger font size
 ```
@@ -458,7 +458,7 @@ index b510dae..79c1f7a 100644
  		}
 
 ```
-### [b174c56fd01b58bbaacf11d714c5c0c4f0d63703](https://github.com/paul-gauthier/easy-chat/commit/b174c56fd01b58bbaacf11d714c5c0c4f0d63703)
+### [b174c56fd01b58bbaacf11d714c5c0c4f0d63703](https://github.com/paul-gauthier/easy-chat/commit/b174c56fd01b58bbaacf11d714c5c0c4f0d63703)<a name="b174c56fd01b58bbaacf11d714c5c0c4f0d63703"></a>
 
 > asked for a bugfix, the latest message wasn't always scrolling into view
 ```
@@ -495,7 +495,7 @@ index 79c1f7a..723d296 100644
  	</script>
 
 ```
-### [8f6d8afbe3107a0d2b39dedb9299ccf9af095bb6](https://github.com/paul-gauthier/easy-chat/commit/8f6d8afbe3107a0d2b39dedb9299ccf9af095bb6)
+### [8f6d8afbe3107a0d2b39dedb9299ccf9af095bb6](https://github.com/paul-gauthier/easy-chat/commit/8f6d8afbe3107a0d2b39dedb9299ccf9af095bb6)<a name="8f6d8afbe3107a0d2b39dedb9299ccf9af095bb6"></a>
 
 > asked to fix layout
 ```
@@ -527,7 +527,7 @@ index 723d296..dea735c 100644
  			background-color: #fff;
 
 ```
-### [7cd078580141ad85bbdf9c6d4771cc6cdc99b711](https://github.com/paul-gauthier/easy-chat/commit/7cd078580141ad85bbdf9c6d4771cc6cdc99b711)
+### [7cd078580141ad85bbdf9c6d4771cc6cdc99b711](https://github.com/paul-gauthier/easy-chat/commit/7cd078580141ad85bbdf9c6d4771cc6cdc99b711)<a name="7cd078580141ad85bbdf9c6d4771cc6cdc99b711"></a>
 
 > asked to fix layout
 ```
@@ -556,7 +556,7 @@ index dea735c..142cd09 100644
  		const chatBox = document.querySelector('.chat-box');
 
 ```
-### [1c2c2820eb3df52abcc2810bfd69e1abc4621ffb](https://github.com/paul-gauthier/easy-chat/commit/1c2c2820eb3df52abcc2810bfd69e1abc4621ffb)
+### [1c2c2820eb3df52abcc2810bfd69e1abc4621ffb](https://github.com/paul-gauthier/easy-chat/commit/1c2c2820eb3df52abcc2810bfd69e1abc4621ffb)<a name="1c2c2820eb3df52abcc2810bfd69e1abc4621ffb"></a>
 
 > asked for a fixed view on mobile
 ```
@@ -584,7 +584,7 @@ index 142cd09..f873b32 100644
  			background-color: #4CAF50;
 
 ```
-### [b453ef96435ccac71331f667c1cac7abd18821b2](https://github.com/paul-gauthier/easy-chat/commit/b453ef96435ccac71331f667c1cac7abd18821b2)
+### [b453ef96435ccac71331f667c1cac7abd18821b2](https://github.com/paul-gauthier/easy-chat/commit/b453ef96435ccac71331f667c1cac7abd18821b2)<a name="b453ef96435ccac71331f667c1cac7abd18821b2"></a>
 
 > asked to refactor font
 ```
@@ -640,7 +640,7 @@ index f873b32..63e5be1 100644
  		}
 
 ```
-### [feff2eccc8675fc2b615760369869c847b758672](https://github.com/paul-gauthier/easy-chat/commit/feff2eccc8675fc2b615760369869c847b758672)
+### [feff2eccc8675fc2b615760369869c847b758672](https://github.com/paul-gauthier/easy-chat/commit/feff2eccc8675fc2b615760369869c847b758672)<a name="feff2eccc8675fc2b615760369869c847b758672"></a>
 
 > asked for a smaller font on mobile
 ```
@@ -665,7 +665,7 @@ index 63e5be1..81134bc 100644
  </head>
 
 ```
-### [6223527b24099c478c9c90ddb274e8e4e907990f](https://github.com/paul-gauthier/easy-chat/commit/6223527b24099c478c9c90ddb274e8e4e907990f)
+### [6223527b24099c478c9c90ddb274e8e4e907990f](https://github.com/paul-gauthier/easy-chat/commit/6223527b24099c478c9c90ddb274e8e4e907990f)<a name="6223527b24099c478c9c90ddb274e8e4e907990f"></a>
 
 > asked to fix zooming in mobile
 ```
@@ -685,7 +685,7 @@ index 81134bc..25d1ccc 100644
                      font-family: 'Open-Dyslexic', sans-serif; 
 
 ```
-### [08e1c2248d1b9c402a1ad85856e3e9bc58e7df03](https://github.com/paul-gauthier/easy-chat/commit/08e1c2248d1b9c402a1ad85856e3e9bc58e7df03)
+### [08e1c2248d1b9c402a1ad85856e3e9bc58e7df03](https://github.com/paul-gauthier/easy-chat/commit/08e1c2248d1b9c402a1ad85856e3e9bc58e7df03)<a name="08e1c2248d1b9c402a1ad85856e3e9bc58e7df03"></a>
 
 > asked to refactor event listener
 ```
@@ -726,7 +726,7 @@ index 25d1ccc..60d0bd3 100644
  	</script>
 
 ```
-### [9b39d74b1bca84dd1d61bb10ea856b878b04ac01](https://github.com/paul-gauthier/easy-chat/commit/9b39d74b1bca84dd1d61bb10ea856b878b04ac01)
+### [9b39d74b1bca84dd1d61bb10ea856b878b04ac01](https://github.com/paul-gauthier/easy-chat/commit/9b39d74b1bca84dd1d61bb10ea856b878b04ac01)<a name="9b39d74b1bca84dd1d61bb10ea856b878b04ac01"></a>
 
 > asked to rename human-user to user
 ```
@@ -790,7 +790,7 @@ index 60d0bd3..24d5763 100644
  				document.getElementById('bottom').scrollIntoView();
 
 ```
-### [61326c036fa7888e58231f4bcb4f13d0f889ea0c](https://github.com/paul-gauthier/easy-chat/commit/61326c036fa7888e58231f4bcb4f13d0f889ea0c)
+### [61326c036fa7888e58231f4bcb4f13d0f889ea0c](https://github.com/paul-gauthier/easy-chat/commit/61326c036fa7888e58231f4bcb4f13d0f889ea0c)<a name="61326c036fa7888e58231f4bcb4f13d0f889ea0c"></a>
 
 > asked to make live api calls to openai chatgpt-turbo, with example calls from docs
 ```
@@ -859,7 +859,7 @@ index 24d5763..92ef4dd 100644
  
 
 ```
-### [fd937e0b235b8235c7af61746d1c8002e4865686](https://github.com/paul-gauthier/easy-chat/commit/fd937e0b235b8235c7af61746d1c8002e4865686)
+### [fd937e0b235b8235c7af61746d1c8002e4865686](https://github.com/paul-gauthier/easy-chat/commit/fd937e0b235b8235c7af61746d1c8002e4865686)<a name="fd937e0b235b8235c7af61746d1c8002e4865686"></a>
 
 > asked to add a progress spinner
 ```
@@ -922,7 +922,7 @@ index 92ef4dd..2c3a767 100644
  			}
 
 ```
-### [62401b126591a021b450e33cad49a38e1374417f](https://github.com/paul-gauthier/easy-chat/commit/62401b126591a021b450e33cad49a38e1374417f)
+### [62401b126591a021b450e33cad49a38e1374417f](https://github.com/paul-gauthier/easy-chat/commit/62401b126591a021b450e33cad49a38e1374417f)<a name="62401b126591a021b450e33cad49a38e1374417f"></a>
 
 > PROMPT Hide the SEND button while waiting for API response.
 ```
@@ -949,7 +949,7 @@ index 2c3a767..50434fc 100644
  			}
 
 ```
-### [2a1c5b33f30e714920dfe787283335406374ddcd](https://github.com/paul-gauthier/easy-chat/commit/2a1c5b33f30e714920dfe787283335406374ddcd)
+### [2a1c5b33f30e714920dfe787283335406374ddcd](https://github.com/paul-gauthier/easy-chat/commit/2a1c5b33f30e714920dfe787283335406374ddcd)<a name="2a1c5b33f30e714920dfe787283335406374ddcd"></a>
 
 > PROMPT Add an animation to reveal each new message as it is added to the conversation.
 ```
@@ -982,7 +982,7 @@ index 50434fc..ab439d0 100644
  </head>
 
 ```
-### [ec5ad8daf2145afcde2b8804bb7a7c88b137deb3](https://github.com/paul-gauthier/easy-chat/commit/ec5ad8daf2145afcde2b8804bb7a7c88b137deb3)
+### [ec5ad8daf2145afcde2b8804bb7a7c88b137deb3](https://github.com/paul-gauthier/easy-chat/commit/ec5ad8daf2145afcde2b8804bb7a7c88b137deb3)<a name="ec5ad8daf2145afcde2b8804bb7a7c88b137deb3"></a>
 
 > PROMPT Start with keyboard focus on the input box. Put focus back there after sending each messages.
 ```
@@ -1010,7 +1010,7 @@ index 95c0ab8..96f909d 100644
  			}
 
 ```
-### [f5bee3eea29680a9fc77ea3ce21f020217dc115b](https://github.com/paul-gauthier/easy-chat/commit/f5bee3eea29680a9fc77ea3ce21f020217dc115b)
+### [f5bee3eea29680a9fc77ea3ce21f020217dc115b](https://github.com/paul-gauthier/easy-chat/commit/f5bee3eea29680a9fc77ea3ce21f020217dc115b)<a name="f5bee3eea29680a9fc77ea3ce21f020217dc115b"></a>
 
 > PROMPT Put SPANs around every individual word in all the messages by default. This way they can be clicked on and styled independently. When the user clicks on any word in the chat history, highlight *just* the word that they clicked on. Do not highlight the whole message. Only require a SINGLE CLICK not a double click.
 ```
@@ -1087,7 +1087,7 @@ index 96f909d..4ed5668 100644
  </html>
 
 ```
-### [62e0862ce0cf1017082e30ec7fa4034cfaf80137](https://github.com/paul-gauthier/easy-chat/commit/62e0862ce0cf1017082e30ec7fa4034cfaf80137)
+### [62e0862ce0cf1017082e30ec7fa4034cfaf80137](https://github.com/paul-gauthier/easy-chat/commit/62e0862ce0cf1017082e30ec7fa4034cfaf80137)<a name="62e0862ce0cf1017082e30ec7fa4034cfaf80137"></a>
 
 > PROMPT Use text-to-voice to speak the highlighted word.
 ```
@@ -1116,7 +1116,7 @@ index 4ed5668..7d3d563 100644
  </html>
 
 ```
-### [353439bb77181912172d4b63962be5d8634e1262](https://github.com/paul-gauthier/easy-chat/commit/353439bb77181912172d4b63962be5d8634e1262)
+### [353439bb77181912172d4b63962be5d8634e1262](https://github.com/paul-gauthier/easy-chat/commit/353439bb77181912172d4b63962be5d8634e1262)<a name="353439bb77181912172d4b63962be5d8634e1262"></a>
 
 > PROMPT When new messages are added it is not scrolling to the bottom to show the newest message. They are being added AFTER the bottom div. New messages need to be added BEFORE the bottom div. Fix this bug.
 ```
@@ -1153,7 +1153,7 @@ index 7d3d563..ca07526 100644
                                                  sendButton.style.display = 'inline-block';
 
 ```
-### [cbae63b904561671b9df467584b3687a61939355](https://github.com/paul-gauthier/easy-chat/commit/cbae63b904561671b9df467584b3687a61939355)
+### [cbae63b904561671b9df467584b3687a61939355](https://github.com/paul-gauthier/easy-chat/commit/cbae63b904561671b9df467584b3687a61939355)<a name="cbae63b904561671b9df467584b3687a61939355"></a>
 
 > PROMPT Add a small speaker button beside each chat message. Including the initial few messages that are already on the page. Use a unicode speaker symbol for the icon.
 ```
@@ -1188,7 +1188,7 @@ index ca07526..b9f8ba3 100644
  		<div class="input-box">
 
 ```
-### [2e73c58dccc4336f53264dd6b9b5093cf88b0d20](https://github.com/paul-gauthier/easy-chat/commit/2e73c58dccc4336f53264dd6b9b5093cf88b0d20)
+### [2e73c58dccc4336f53264dd6b9b5093cf88b0d20](https://github.com/paul-gauthier/easy-chat/commit/2e73c58dccc4336f53264dd6b9b5093cf88b0d20)<a name="2e73c58dccc4336f53264dd6b9b5093cf88b0d20"></a>
 
 > PROMPT The text-to-speech is saying "speaker outputting high volume" at the end of every message. I think it is reading the unicode speaker icon aloud. It should not. Fix this bug.
 ```
@@ -1208,7 +1208,7 @@ index b9f8ba3..8f6de60 100644
                          event.target.classList.add('highlight');
 
 ```
-### [1037bd9206eb29eb522090bac3b838a279d125ad](https://github.com/paul-gauthier/easy-chat/commit/1037bd9206eb29eb522090bac3b838a279d125ad)
+### [1037bd9206eb29eb522090bac3b838a279d125ad](https://github.com/paul-gauthier/easy-chat/commit/1037bd9206eb29eb522090bac3b838a279d125ad)<a name="1037bd9206eb29eb522090bac3b838a279d125ad"></a>
 
 > PROMPT Change all the speaker icons to use font-awesome.
 ```
@@ -1254,7 +1254,7 @@ index 8f6de60..fa09253 100644
                          event.target.classList.add('highlight');
 
 ```
-### [0b9b4793cec7754f39e70f67240d262d2f4dca7e](https://github.com/paul-gauthier/easy-chat/commit/0b9b4793cec7754f39e70f67240d262d2f4dca7e)
+### [0b9b4793cec7754f39e70f67240d262d2f4dca7e](https://github.com/paul-gauthier/easy-chat/commit/0b9b4793cec7754f39e70f67240d262d2f4dca7e)<a name="0b9b4793cec7754f39e70f67240d262d2f4dca7e"></a>
 
 > PROMPT Add speaker icons with calls to speak() for new messages from user and assistant.
 ```
@@ -1286,7 +1286,7 @@ index fa09253..2cb7e08 100644
  			}
 
 ```
-### [5a277084d4892227067922ea5127d5c0a625a02c](https://github.com/paul-gauthier/easy-chat/commit/5a277084d4892227067922ea5127d5c0a625a02c)
+### [5a277084d4892227067922ea5127d5c0a625a02c](https://github.com/paul-gauthier/easy-chat/commit/5a277084d4892227067922ea5127d5c0a625a02c)<a name="5a277084d4892227067922ea5127d5c0a625a02c"></a>
 
 > PROMPT When the user adds a new message, add a speaker icon which will read the user's message aloud.
 ```
@@ -1318,7 +1318,7 @@ index 2cb7e08..7e07c16 100644
  </html>
 
 ```
-### [7e70cf97297444ab845e1422b544778f56d08c15](https://github.com/paul-gauthier/easy-chat/commit/7e70cf97297444ab845e1422b544778f56d08c15)
+### [7e70cf97297444ab845e1422b544778f56d08c15](https://github.com/paul-gauthier/easy-chat/commit/7e70cf97297444ab845e1422b544778f56d08c15)<a name="7e70cf97297444ab845e1422b544778f56d08c15"></a>
 
 > PROMPT Call addUserSpeakerIcon() from inside sendMessage, right after the user message is inserted. Don't use chatBox.addEventListener to trigger it.
 ```
@@ -1353,7 +1353,7 @@ index 7e07c16..e49b3e8 100644
 +            
 
 ```
-### [32976cb5d17b258b7cbf0774b9e186f3eefff065](https://github.com/paul-gauthier/easy-chat/commit/32976cb5d17b258b7cbf0774b9e186f3eefff065)
+### [32976cb5d17b258b7cbf0774b9e186f3eefff065](https://github.com/paul-gauthier/easy-chat/commit/32976cb5d17b258b7cbf0774b9e186f3eefff065)<a name="32976cb5d17b258b7cbf0774b9e186f3eefff065"></a>
 
 > asked to generate an immersive reading function in another file, imported
 ```
@@ -1420,7 +1420,7 @@ index e49b3e8..83df70c 100644
  	
 
 ```
-### [2e4f463d60307daaf79f4dceb802bf989387487b](https://github.com/paul-gauthier/easy-chat/commit/2e4f463d60307daaf79f4dceb802bf989387487b)
+### [2e4f463d60307daaf79f4dceb802bf989387487b](https://github.com/paul-gauthier/easy-chat/commit/2e4f463d60307daaf79f4dceb802bf989387487b)<a name="2e4f463d60307daaf79f4dceb802bf989387487b"></a>
 
 > restore the original text when speaking ends
 ```
@@ -1444,7 +1444,7 @@ index 83df70c..c637df5 100644
                      const speakerIcon = document.createElement('span');
 
 ```
-### [9f0df30a797034b28ec5978ee035d18d6c3914a1](https://github.com/paul-gauthier/easy-chat/commit/9f0df30a797034b28ec5978ee035d18d6c3914a1)
+### [9f0df30a797034b28ec5978ee035d18d6c3914a1](https://github.com/paul-gauthier/easy-chat/commit/9f0df30a797034b28ec5978ee035d18d6c3914a1)<a name="9f0df30a797034b28ec5978ee035d18d6c3914a1"></a>
 
 > adopt newest speak()
 ```
@@ -1487,7 +1487,7 @@ index c637df5..c3d6a22 100644
           
 
 ```
-### [c3c61572a4aeb6dbbc64b400bf170077a4407dca](https://github.com/paul-gauthier/easy-chat/commit/c3c61572a4aeb6dbbc64b400bf170077a4407dca)
+### [c3c61572a4aeb6dbbc64b400bf170077a4407dca](https://github.com/paul-gauthier/easy-chat/commit/c3c61572a4aeb6dbbc64b400bf170077a4407dca)<a name="c3c61572a4aeb6dbbc64b400bf170077a4407dca"></a>
 
 > PROMPT with tweaks: keep the speaker button working on newly added messages after playing
 ```
@@ -1510,7 +1510,7 @@ index c3d6a22..83ea475 100644
                  const addUserSpeakerIcon = (message) => {
 
 ```
-### [360e61ac4fa10e5bd553f7024fe1a130952e59f9](https://github.com/paul-gauthier/easy-chat/commit/360e61ac4fa10e5bd553f7024fe1a130952e59f9)
+### [360e61ac4fa10e5bd553f7024fe1a130952e59f9](https://github.com/paul-gauthier/easy-chat/commit/360e61ac4fa10e5bd553f7024fe1a130952e59f9)<a name="360e61ac4fa10e5bd553f7024fe1a130952e59f9"></a>
 
 > asked gpt4 to generate a new speak() in another file, imported
 ```
@@ -1601,7 +1601,7 @@ index 83ea475..c2190de 100644
                      const speakerIcon = document.createElement('span');
 
 ```
-### [37a4e74f68b15b8cf4a752fb22e8d7ceb2117393](https://github.com/paul-gauthier/easy-chat/commit/37a4e74f68b15b8cf4a752fb22e8d7ceb2117393)
+### [37a4e74f68b15b8cf4a752fb22e8d7ceb2117393](https://github.com/paul-gauthier/easy-chat/commit/37a4e74f68b15b8cf4a752fb22e8d7ceb2117393)<a name="37a4e74f68b15b8cf4a752fb22e8d7ceb2117393"></a>
 
 > bugfix: put back dyslexic font
 ```
@@ -1620,7 +1620,7 @@ index c2190de..9fac1ab 100644
  <body>
 
 ```
-### [e80ee9ceba2d5922d0b528bec7093f0ef9a68a4d](https://github.com/paul-gauthier/easy-chat/commit/e80ee9ceba2d5922d0b528bec7093f0ef9a68a4d)
+### [e80ee9ceba2d5922d0b528bec7093f0ef9a68a4d](https://github.com/paul-gauthier/easy-chat/commit/e80ee9ceba2d5922d0b528bec7093f0ef9a68a4d)<a name="e80ee9ceba2d5922d0b528bec7093f0ef9a68a4d"></a>
 
 > PROMPT Right now on ipad the keyboard closes when the user hits the SEND button, but it stays open if the user types the ENTER key to send the message. It should close when they type ENTER to send the message. Fix this bug.
 ```
@@ -1648,7 +1648,7 @@ index 9fac1ab..3078bb3 100644
                                                  inputBox.focus();
 
 ```
-### [a65014b09661b9e756c704def74956959648d76a](https://github.com/paul-gauthier/easy-chat/commit/a65014b09661b9e756c704def74956959648d76a)
+### [a65014b09661b9e756c704def74956959648d76a](https://github.com/paul-gauthier/easy-chat/commit/a65014b09661b9e756c704def74956959648d76a)<a name="a65014b09661b9e756c704def74956959648d76a"></a>
 
 > PROMPT inputBox.addEventListener('keydown')... need so suppress the event. Don't let the enter key be input to the textarea.
 ```
@@ -1669,7 +1669,7 @@ index 3078bb3..347643e 100644
                  
 
 ```
-### [53f53fee541ca8ed0e09f0f30582a11049320682](https://github.com/paul-gauthier/easy-chat/commit/53f53fee541ca8ed0e09f0f30582a11049320682)
+### [53f53fee541ca8ed0e09f0f30582a11049320682](https://github.com/paul-gauthier/easy-chat/commit/53f53fee541ca8ed0e09f0f30582a11049320682)<a name="53f53fee541ca8ed0e09f0f30582a11049320682"></a>
 
 > PROMPT Write a js function suitable for embedding in an html page which takes markdown text and turns it into html, but each word in the text should be contained in its own span with class="word". Be sure not to wrap html tags in spans. Only wrap words which are made up of alpha characters. You can use the marked library, like in this examples:   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>   <script>     document.getElementById('content').innerHTML =       marked.parse('# Marked in browser\n\nRendered by **marked**.');   </script>
 ```
@@ -1720,7 +1720,7 @@ index 347643e..9a2a451 100644
 
 ```
 
-### [6957277be2c876bad0b2e1fdb5a97c69f8adf38f](https://github.com/paul-gauthier/easy-chat/commit/6957277be2c876bad0b2e1fdb5a97c69f8adf38f)
+### [6957277be2c876bad0b2e1fdb5a97c69f8adf38f](https://github.com/paul-gauthier/easy-chat/commit/6957277be2c876bad0b2e1fdb5a97c69f8adf38f)<a name="6957277be2c876bad0b2e1fdb5a97c69f8adf38f"></a>
 
 > asked chatgpt4 to create a markdown -> html with spans on every word function, imported
 ```
@@ -1786,7 +1786,7 @@ index 6f5be9b..1fd0ceb 100644
  const sendButton = document.querySelector('.input-box button');
 
 ```
-### [9fa1d66ce037bca68cd0fee283294be01a11baa5](https://github.com/paul-gauthier/easy-chat/commit/9fa1d66ce037bca68cd0fee283294be01a11baa5)
+### [9fa1d66ce037bca68cd0fee283294be01a11baa5](https://github.com/paul-gauthier/easy-chat/commit/9fa1d66ce037bca68cd0fee283294be01a11baa5)<a name="9fa1d66ce037bca68cd0fee283294be01a11baa5"></a>
 
 > PROMPT Slow down the speech by half.
 ```
@@ -1806,7 +1806,7 @@ index 1fd0ceb..baf914d 100644
  });
 
 ```
-### [627986a52aad50b874cfbe66088697e2af5fef21](https://github.com/paul-gauthier/easy-chat/commit/627986a52aad50b874cfbe66088697e2af5fef21)
+### [627986a52aad50b874cfbe66088697e2af5fef21](https://github.com/paul-gauthier/easy-chat/commit/627986a52aad50b874cfbe66088697e2af5fef21)<a name="627986a52aad50b874cfbe66088697e2af5fef21"></a>
 
 > PROMPT Add a role:system message at the start of the messages array. Don't display it in the html. Content should be: You are a helpful assistant. You are speaking to a child who is just learning to read. Use simple words. Use short sentences. Use short paragraphs.
 ```
@@ -1830,7 +1830,7 @@ index baf914d..50cf908 100644
 -
 
 ```
-### [b709f7af5ab10869c34ff7bae0c07d32cd2d7774](https://github.com/paul-gauthier/easy-chat/commit/b709f7af5ab10869c34ff7bae0c07d32cd2d7774)
+### [b709f7af5ab10869c34ff7bae0c07d32cd2d7774](https://github.com/paul-gauthier/easy-chat/commit/b709f7af5ab10869c34ff7bae0c07d32cd2d7774)<a name="b709f7af5ab10869c34ff7bae0c07d32cd2d7774"></a>
 
 > change machine-user -> assistant everywhere
 ```
@@ -1905,7 +1905,7 @@ index 50cf908..be85b7a 100644
      }
 
 ```
-### [85d0ef30c2698dc17b9e96936ffd0598c5e65454](https://github.com/paul-gauthier/easy-chat/commit/85d0ef30c2698dc17b9e96936ffd0598c5e65454)
+### [85d0ef30c2698dc17b9e96936ffd0598c5e65454](https://github.com/paul-gauthier/easy-chat/commit/85d0ef30c2698dc17b9e96936ffd0598c5e65454)<a name="85d0ef30c2698dc17b9e96936ffd0598c5e65454"></a>
 
 > fix utterance rate
 ```
@@ -1935,7 +1935,7 @@ index ceddd31..f33f587 100644
                  const charIndex = event.charIndex;
 
 ```
-### [f013da2706c1603f18397d2870ee2fd9dc8b50a6](https://github.com/paul-gauthier/easy-chat/commit/f013da2706c1603f18397d2870ee2fd9dc8b50a6)
+### [f013da2706c1603f18397d2870ee2fd9dc8b50a6](https://github.com/paul-gauthier/easy-chat/commit/f013da2706c1603f18397d2870ee2fd9dc8b50a6)<a name="f013da2706c1603f18397d2870ee2fd9dc8b50a6"></a>
 
 > PROMPT Move the bearer token into a global variable. Just the token itself, not the Bearer keyword.
 ```
@@ -1969,7 +1969,7 @@ index d1ab034..5977483 100644
  
 
 ```
-### [fa3485473473c2f9903b46b0181a29a50b3395d0](https://github.com/paul-gauthier/easy-chat/commit/fa3485473473c2f9903b46b0181a29a50b3395d0)
+### [fa3485473473c2f9903b46b0181a29a50b3395d0](https://github.com/paul-gauthier/easy-chat/commit/fa3485473473c2f9903b46b0181a29a50b3395d0)<a name="fa3485473473c2f9903b46b0181a29a50b3395d0"></a>
 
 > PROMPT Obfuscate the value of token in the source file.
 ```
@@ -2002,7 +2002,7 @@ index 5977483..d1ab034 100644
  
 
 ```
-### [65ecf6d815e7b19d7f3fbe5ef739e0d2ab6744fc](https://github.com/paul-gauthier/easy-chat/commit/65ecf6d815e7b19d7f3fbe5ef739e0d2ab6744fc)
+### [65ecf6d815e7b19d7f3fbe5ef739e0d2ab6744fc](https://github.com/paul-gauthier/easy-chat/commit/65ecf6d815e7b19d7f3fbe5ef739e0d2ab6744fc)<a name="65ecf6d815e7b19d7f3fbe5ef739e0d2ab6744fc"></a>
 
 > bugfix: gpt didn't correctly perform the btoa() on the original token, did it manually
 ```

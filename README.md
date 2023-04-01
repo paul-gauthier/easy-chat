@@ -32,7 +32,7 @@ Here's an example prompt:
 > Use text-to-voice to speak the highlighted word.
 
 Which resulted in
-[these changes](https://github.com/paul-gauthier/easy-chat/commit/62e0862ce0cf1017082e30ec7fa4034cfaf80137) to the code:
+[these changes](commits.md#user-content-62e0862ce0cf1017082e30ec7fa4034cfaf80137) to the code:
 
 ```
 diff --git a/chat.html b/chat.html
@@ -67,7 +67,7 @@ Here is another prompt, this time describing a bug and asking for a bug fix:
 > Fix this bug.
 
 Which produced
-[this simple fix](https://github.com/paul-gauthier/easy-chat/commit/2e73c58dccc4336f53264dd6b9b5093cf88b0d20):
+[this simple fix](commits.md#user-content-2e73c58dccc4336f53264dd6b9b5093cf88b0d20):
 
 ```
 diff --git a/chat.html b/chat.html
@@ -86,14 +86,14 @@ index b9f8ba3..8f6de60 100644
 ```
 
 One of the most impressive changes was when I asked it to take what was currently a non-functional chat UI and
-[wire it up to the OpenAI chat completions API](https://github.com/paul-gauthier/easy-chat/commit/61326c036fa7888e58231f4bcb4f13d0f889ea0c).
+[wire it up to the OpenAI chat completions API](commits.md#user-content-61326c036fa7888e58231f4bcb4f13d0f889ea0c).
 I don't have a record of the exact prompt I used, but I basically said "wire it up like this" and pasted
 a dozen lines of the `curl` example from the [API reference docs](https://platform.openai.com/docs/api-reference/chat).
 
 Another shocking change occured when I asked ChatGPT to add a speaker button beside each chat message bubble.
 I had previously asked it to use text-to-speak to speak individual words when clicked.
 When I asked it to
-[add a speaker button on every chat bubble](https://github.com/paul-gauthier/easy-chat/commit/cbae63b904561671b9df467584b3687a61939355)
+[add a speaker button on every chat bubble](commits.md#user-content-cbae63b904561671b9df467584b3687a61939355)
 , it wired them up to speak all the text in the bubble without me needing to ask.
 
 I didn't start recording the actual prompts I was using until I was a couple of dozen commits into the process.
