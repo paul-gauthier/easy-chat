@@ -48,8 +48,9 @@ const sendMessage = () => {
         inputBox.value = '';
         document.getElementById('bottom').scrollIntoView();
 
+        const systemPrompt = "You are a helpful assistant. You are speaking to a child. Use common words. Use short sentences. Use short paragraphs. Start by asking if they want you to tell a story."
         const messages = [];
-        messages.push({ role: 'system', content: "You are a helpful assistant. You are speaking to a child. Use common words. Use short sentences. Use short paragraphs. Start by asking if they want to play a game." });
+        messages.push({ role: 'system', content: systemPrompt });
         const chatMessages = chatBox.querySelectorAll('.user, .assistant, .assistant');
         for (let i = 0; i < chatMessages.length; i++) {
             const role = chatMessages[i].classList.contains('user') ? 'user' : 'assistant';
