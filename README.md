@@ -90,11 +90,17 @@ One of the most impressive changes was when I asked it to take what was currentl
 I don't have a record of the exact prompt I used, but I basically said "wire it up like this" and pasted
 a dozen lines of the `curl` example from the [API reference docs](https://platform.openai.com/docs/api-reference/chat).
 
+Another shocking change occured when I asked ChatGPT to add a speaker button beside each chat message bubble.
+I had previously asked it to use text-to-speak to speak individual words when clicked.
+When I asked it to
+[add a speaker button on every chat bubble](https://github.com/paul-gauthier/easy-chat/commit/cbae63b904561671b9df467584b3687a61939355)
+, it wired them up to speak all the text in the bubble without me needing to ask.
+
 I didn't start recording the actual prompts I was using until I was a couple of dozen commits into the process.
 I was kind of suprised at how much I was accomplishing by treating ChatGPT as a junior web developer.
 
-Regardless, you can see many of the prompts I used in the
-[git history of this repo](https://github.com/paul-gauthier/easy-chat/commits/main).
+Regardless, you can see many of the prompts I used in this
+[curated commit history of this repo](commits.md).
 Any commit that starts with "PROMPT" was created by ChatGPT.
 If the commit starts with "asked for ...", that also means ChatGPT did the coding, but I didn't record the exact prompt.
 
