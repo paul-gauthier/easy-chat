@@ -98,7 +98,7 @@ When I asked it to
 
 I am missing the actual text of many of the earliest prompts I used.
 I didn't start recording them until I was a couple of dozen commits into the process.
-When I started, I didn't think I was going to make much progress in this style of "coding".
+When I started, I didn't think I was going to make much progress using this style of "coding".
 I am suprised at how much I was able to accomplish by treating ChatGPT as a junior web developer.
 
 Regardless, you can review this
