@@ -27,7 +27,7 @@ I started by asking it to create the html for a simple chat app, with embedded c
 ChatGPT figured out how to make the requested changes, what parts of the code needed to be modified and what modifications to make.
 I reviewed the diffs it generated, and either accepted or rejected the proposed changes. If the changes weren't acceptable, I discarded them and improved my request to be more specific or explicit -- and tried again.
 
-In essence, I treated ChatGPT as a junior web developer.
+In essence, I worked with ChatGPT like a junior web developer.
 
 ### Example prompts
 
