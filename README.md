@@ -22,7 +22,10 @@ Try it out here: [Easy Chat](https://paul-gauthier.github.io/easy-chat/)
 
 Almost all the code in this repository was written by ChatGPT.
 I started by asking it to create the html for a simple chat app, with embedded css and js.
-After that, I kept feeding it the entire html/js/css blob and requesting changes, bug fixes, new features and improvements.
+After that, I just asked for changes, bug fixes, new features and improvements.
+It figured out where in the code to make changes and what changes to make.
+I reviewed the diffs it generated, and either accepted or rejected the proposed changes.
+If the changes weren't acceptable, I discarded them and improved my prompt to be more specific or explicit -- and tried again.
 
 ### Example prompts
 
@@ -119,7 +122,7 @@ My workflow for each change was dead simple:
   - Each time, ChatGPT returned a modified version of the codebase, implementing my requested changes.
   
   - I did a `git diff` to review what ChatGPT had changed and tried out the resulting system.
-    - If it was good, `git commit`
+    - If it was good, `git commit -F prompt.txt`
     - If it wasn't right, I would use `git stash` to discard the changes, adjust the prompt and try again.
 
 I used the roles feature of [aichat](https://github.com/sigoden/aichat) to set up a `webdev` role with a system prompt like this:
