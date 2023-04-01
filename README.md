@@ -91,17 +91,20 @@ I don't have a record of the exact prompt I used, but I basically said "wire it 
 a dozen lines of the `curl` example from the [API reference docs](https://platform.openai.com/docs/api-reference/chat).
 
 Another shocking change occured when I asked ChatGPT to add a speaker button beside each chat message bubble.
-I had previously asked it to use text-to-speak to speak individual words when clicked.
+I had previously asked it to use text-to-speech to speak individual words when clicked.
 When I asked it to
 [add a speaker button on every chat bubble](commits.md#user-content-cbae63b904561671b9df467584b3687a61939355)
 , it wired them up to speak all the text in the bubble without me needing to ask.
 
-I didn't start recording the actual prompts I was using until I was a couple of dozen commits into the process.
-I was kind of suprised at how much I was accomplishing by treating ChatGPT as a junior web developer.
+I am missing the actual text of many of the earliest prompts I used.
+I didn't start recording them until I was a couple of dozen commits into the process.
+When I started, I didn't think I was going to make much progress in this style of "coding".
+I am suprised at how much I was able to accomplish by treating ChatGPT as a junior web developer.
 
-Regardless, you can see many of the prompts I used in this
-[curated commit history of this repo](commits.md).
-Any commit that starts with "PROMPT" was created by ChatGPT.
+Regardless, you can review this
+[curated commit history of this repo](commits.md)
+to see many of the prompts I used.
+Any commit that starts with "PROMPT" was coded by ChatGPT from that specific prompt.
 If the commit starts with "asked for ...", that also means ChatGPT did the coding, but I didn't record the exact prompt.
 
 ### Workflow
@@ -129,7 +132,7 @@ I used the roles feature of [aichat](https://github.com/sigoden/aichat) to set u
 
 ### Limitations
 
-My workflow broke down when the size of the prompt and codebase exceeded the context window for ChatGPT 3.5 turbo.
+My workflow broke down when the size of the prompt and codebase exceeded the context window for the `gpt-3.5-turbo` model.
 I experimented with numerous other workflows to try and work around this limit, but with little consistent success.
 
 Ultimately I refactored the js and css into their own files, and began feeding ChatGPT excerpts from the code that were relevant to each change I needed.
