@@ -22,7 +22,8 @@ Try it out here: [Easy Chat](https://paul-gauthier.github.io/easy-chat/)
 
 Almost all the code in this repository was written by ChatGPT, using what I think is a novel workflow.
 
-I started by asking it to create the html for a simple chat app, with embedded css and js. After that, I just asked for changes, bug fixes, new features and improvements in plain English.
+I started by asking it to create the html for a simple chat app, with embedded css and js. After that, I just asked for changes, bug fixes, new features and improvements in plain English. For each change, I passed it the change request and a copy of the entire codebase.
+It returned a new copy of the codebase, with the requested changes. 
 
 ChatGPT figured out how to make the requested changes, what parts of the code needed to be modified and what modifications to make.
 I reviewed the diffs it generated, and either accepted or rejected the proposed changes. If the changes weren't acceptable, I discarded them and improved my request to be more specific or explicit -- and tried again.
