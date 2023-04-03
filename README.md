@@ -20,7 +20,7 @@ Try it out here: [Easy Chat](https://paul-gauthier.github.io/easy-chat/)
 
 ## Created by ChatGPT
 
-Almost all the code in this repository was written by `gpt-3.5-turbo`, using what I think is a novel workflow.
+Almost all the code in this repository was written by ChatGPT, using what I think is a novel workflow.
 
 I started by asking it to create the html for a simple chat app, with embedded css and js. After that, I just asked for changes, bug fixes, new features and improvements in plain English.
 
@@ -120,7 +120,7 @@ My workflow for each change was dead simple:
 
   - I wrote my plain English change request in a file called `prompt.txt`.
   
-  - I fed the prompt and the entire codebase to ChatGPT via the [aichat](https://github.com/sigoden/aichat) tool.
+  - I fed the prompt and the entire codebase to `gpt-3.5-turbo` via the [aichat](https://github.com/sigoden/aichat) tool.
     - `cat prompt.txt chat.html | aichat -r webdev > tmp.html && cp tmp.html chat.html`
 
   - Each time, ChatGPT returned a modified version of the codebase, implementing my requested changes.
