@@ -8,6 +8,7 @@ Almost all the code for Easy Chat was written by ChatGPT.
 
 - Typography, layout and text spacing which is helpful for young, early or struggling readers.
 - Large, easy-to-read text in the Open Dyslexic font.
+- No incremental "live typing" of the ChatGPT response, which is distracting when trying to read. Responses display when they are fully loaded.
 - Text-to-speech of individual words by clicking on any word.
 - Text-to-speech of entire passages with Immersive Reading (highlights each word as it is read aloud at a moderate reading speed). Click on the speaker icons.
 - A system prompt that tells ChatGPT it is speaking to a child and to use common words, short sentences and short paragraphs.
