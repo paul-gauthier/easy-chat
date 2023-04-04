@@ -20,7 +20,7 @@ Try it out here: [Easy Chat](https://paul-gauthier.github.io/easy-chat/)
 
 ## Created by ChatGPT
 
-Almost all the code in this repository was written by ChatGPT, using what I think is a novel workflow.
+Almost all the code in this repository was written by ChatGPT, using what I think is a novel workflow. 
 
 I started by asking it to create the html for a simple chat app, with embedded css and js. After that, I just asked for changes, bug fixes, new features and improvements in plain English.
 
@@ -30,6 +30,21 @@ ChatGPT figured out how to make the requested changes, what parts of the code ne
 I reviewed the diffs it generated, and either accepted or rejected the proposed changes. If the changes weren't acceptable, I discarded them and improved my request to be more specific or explicit -- and tried again.
 
 In essence, I worked with ChatGPT like it was a junior web developer.
+
+### All code in, all code out
+
+I have starting thinking about this as an "all code in, all code out" pattern:
+
+  - Send all the (relevant) code to GPT along with a change request
+  - Have it reply with all the code, modified to include the requested change
+  - Automatically replace the original files with the GPT edited versions
+  - Use git diff, etc to review and either accept/reject the changes.
+  
+GPT is **significantly** better at modifying code when following this "all code in, all code out" pattern. This pattern has downsides: you can quickly exhaust the context window, it's slow waiting for GPT to re-type your code (most of which it hasn't modified) and of course you're running up token costs. But the ability of GPT to understand and execute high level changes to the code is far superior with this approach.
+
+I have tried quite a large number of alternative workflows. Outside the "all code in/out" pattern, GPT gets confused, makes mistakes, implements the requested change in different ways in different sections of the code, or just plain fails.
+
+If you're asking for self contained modifications to a single function, that's all the code that needs to go in/out. On the other side of the spectrum, I had GPT build an entire small webapp using this pattern by repeatedly feeding it all the html/css/js along with a series of feature requests. Many feature requests required coordinated changes across html/css/js.
 
 ### Example prompts
 
