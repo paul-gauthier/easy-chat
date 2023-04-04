@@ -62,7 +62,7 @@ body {
 
 .chat-box .fa {
     display: inline-block;
-    margin-left: 10px;
+    margin-right: 10px; /* Updated code for speaker icon */
     font-size: 20px;
     cursor: pointer;
 }

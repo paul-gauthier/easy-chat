@@ -84,7 +84,7 @@ const sendMessage = () => {
                 const speakButton = document.createElement('span');
                 speakButton.classList.add('fa', 'fa-volume-up');
                 speakButton.onclick = () => speak(assistantMessage);
-                assistantMessage.appendChild(speakButton);
+                assistantMessage.insertBefore(speakButton, assistantMessage.firstChild);
             })
             .catch(error => console.log(error));
     }
@@ -165,5 +165,5 @@ const addUserSpeakerIcon = (message) => {
     const speakerIcon = document.createElement('span');
     speakerIcon.classList.add('fa', 'fa-volume-up');
     speakerIcon.onclick = () => speak(message);
-    message.appendChild(speakerIcon);
+    message.insertBefore(speakerIcon, message.firstChild);
 };
