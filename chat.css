@@ -43,7 +43,7 @@ body {
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 100px auto 0 auto; /* Changed */
     padding: 20px;
     height: 100%;
     display: flex;
@@ -56,7 +56,7 @@ body {
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .chat-box p {
@@ -101,7 +101,6 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 20px;
 }
 
 .input-box textarea {
