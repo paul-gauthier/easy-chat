@@ -12,7 +12,7 @@ body {
 }
 
 .top-nav {
-    background-color: #333;
+    background-color: #4CAF50;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -22,6 +22,18 @@ body {
 .top-nav a {
     color: #fff;
     text-decoration: none;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    float: right;
+}
+
+.nav-right a {
+    margin: 0 10px;
 }
 
 .container {
@@ -75,7 +87,7 @@ body {
 
 .chat-box .fa {
     display: inline-block;
-    margin-right: 10px; /* Updated code for speaker icon */
+    margin-right: 10px;
     font-size: 20px;
     cursor: pointer;
 }
@@ -120,14 +132,12 @@ body {
     height: 20px;
 }
 
-/* New code for smaller font size on mobile */
 @media only screen and (max-width: 600px) {
     * {
         font-size: 14px;
     }
 }
 
-/* New code for progress spinner */
 .spinner {
     border: 16px solid #f3f3f3;
     border-top: 16px solid #4CAF50;
@@ -149,7 +159,6 @@ body {
     }
 }
 
-/* New code for message reveal animation */
 @keyframes reveal {
     0% {
         opacity: 0;
@@ -162,7 +171,6 @@ body {
     }
 }
 
-/* New code for word highlighting */
 .highlight {
     background-color: yellow;
 }
