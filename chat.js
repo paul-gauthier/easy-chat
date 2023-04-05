@@ -1,23 +1,3 @@
-
-// Generate a function markdownToHtmlWithWordSpans
-// that takes a string of markdown and returns a string of HTML
-// with <span> tags around each word
-// "Hello, **world**!" -> "Hello, <strong><span>world</span></strong>!"
-// '''
-// List:
-// - item1
-// - item2
-// - item3
-// '''
-// ->
-// '''
-// <p>List:</p>
-// <ul>
-// <li><span>item1</span></li>
-// <li><span>item2</span></li>
-// <li><span>item3</span></li>
-// </ul>
-// '''
 const markdownToHtmlWithWordSpans = (markdown) => {
     const html = marked.parse(markdown);
     const parser = new DOMParser();
@@ -29,7 +9,6 @@ const markdownToHtmlWithWordSpans = (markdown) => {
     });
     return doc.body.innerHTML;
 };
-
 
 const chatBox = document.querySelector('.chat-box');
 const inputBox = document.querySelector('.input-box textarea');
@@ -81,10 +60,7 @@ const sendMessage = () => {
                 spinner.style.display = 'none';
                 sendButton.style.display = 'inline-block';
                 inputBox.focus();
-                const speakButton = document.createElement('span');
-                speakButton.classList.add('fa', 'fa-volume-up');
-                speakButton.onclick = () => speak(assistantMessage);
-                assistantMessage.insertBefore(speakButton, assistantMessage.firstChild);
+                addUserSpeakerIcon(assistantMessage);
             })
             .catch(error => console.log(error));
     }
@@ -99,27 +75,26 @@ inputBox.addEventListener('keydown', (event) => {
     }
 });
 
-/* New code for word highlighting */
 chatBox.addEventListener('click', (event) => {
     if (event.target.tagName === 'SPAN' && !event.target.classList.contains('fa')) {
         const highlightedWords = chatBox.querySelectorAll('.highlight');
         highlightedWords.forEach(word => word.classList.remove('highlight'));
         event.target.classList.add('highlight');
         const textToSpeak = event.target.textContent;
-      const speech = new SpeechSynthesisUtterance(textToSpeak);
+        const speech = new SpeechSynthesisUtterance(textToSpeak);
         speechSynthesis.speak(speech);
     }
 });
 
-function highlight(element) {
+const highlight = (element) => {
     element.classList.add('highlight');
-}
+};
 
-function removeHighlight(element) {
+const removeHighlight = (element) => {
     element.classList.remove('highlight');
-}
+};
 
-function speak(element) {
+const speak = (element) => {
     if ('speechSynthesis' in window) {
         const textElements = element.querySelectorAll('span');
         const textContent = Array.from(textElements).map(el => el.textContent).join(' ');
@@ -144,13 +119,13 @@ function speak(element) {
     } else {
         alert('Speech Synthesis not supported in your browser');
     }
-}
+};
 
-function removeHighlights(elements) {
+const removeHighlights = (elements) => {
     elements.forEach(removeHighlight);
-}
+};
 
-function getWordIndexByCharIndex(textElements, charIndex) {
+const getWordIndexByCharIndex = (textElements, charIndex) => {
     let currentCharIndex = 0;
     for (let i = 0; i < textElements.length; i++) {
         currentCharIndex += textElements[i].textContent.length + 1; // Add 1 for the space between words
@@ -159,8 +134,8 @@ function getWordIndexByCharIndex(textElements, charIndex) {
         }
     }
     return -1;
-}
-/* New code for adding speaker icon to user message */
+};
+
 const addUserSpeakerIcon = (message) => {
     const speakerIcon = document.createElement('span');
     speakerIcon.classList.add('fa', 'fa-volume-up');
