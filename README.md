@@ -45,7 +45,8 @@ GPT is **significantly** better at modifying code when following this "all code 
 
 I have tried quite a large number of alternative workflows. Outside the "all code in/out" pattern, GPT gets confused, makes mistakes, implements the requested change in different ways in different sections of the code, or just plain fails.
 
-If you're asking for self contained modifications to a single function, that's all the code that needs to go in/out. On the other side of the spectrum, I had GPT build an entire small webapp using this pattern by repeatedly feeding it all the html/css/js along with a series of feature requests. Many feature requests required coordinated changes across html/css/js.
+If you're asking for self contained modifications to a single function, that's all the code that needs to go in/out.
+On the other side of the spectrum, GPT built this entire webapp using this pattern by repeatedly feeding it all the html/css/js along with a series of feature requests. Many feature requests required coordinated changes across html/css/js.
 
 ### Example prompts
 
