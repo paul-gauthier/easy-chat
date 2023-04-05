@@ -54,10 +54,7 @@ body {
     margin-bottom: 30px;
 }
 
-.chat-box p,
-.chat-box .assistant,
-.chat-box .user,
-.chat-box .assistant {
+.chat-box p {
     margin: 20px 0;
     padding: 10px;
     border-radius: 10px;
@@ -74,11 +71,6 @@ body {
 .chat-box .user {
     background-color: #d9edf7;
     text-align: right;
-}
-
-.chat-box .assistant {
-    background-color: #f0f0f0;
-    text-align: left;
 }
 
 .chat-box span {
