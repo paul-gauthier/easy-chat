@@ -17,6 +17,10 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
+    position: fixed; /* Added */
+    top: 0; /* Added */
+    width: 100%; /* Added */
+    z-index: 1; /* Added */
 }
 
 .top-nav a {
