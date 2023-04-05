@@ -11,6 +11,19 @@ body {
     overflow: hidden;
 }
 
+.top-nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.top-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
